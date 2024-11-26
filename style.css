@@ -5,16 +5,24 @@ body {
   padding: 0;
   line-height: 1.6;
   background-color: #fef8e4; /* Màu pastel nhẹ */
-  color: #444; /* Màu chữ xám đậm, tương phản nhẹ */
+  color: #444; /* Màu chữ xám đậm */
 }
 
 /* Header */
 header {
-  background: #ffcbc1; /* Màu pastel hồng nhạt */
-  color: #333; /* Màu chữ xám đậm, dễ đọc trên nền hồng */
+  background: #ffcbc1;
+  color: #333;
   padding: 1rem 0;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  transition: color 0.3s ease; /* Hiệu ứng mượt khi đổi màu */
+}
+
+header h1:hover {
+  color: #ff6f61; /* Màu cam đỏ nổi bật khi hover */
 }
 
 /* Navigation menu */
@@ -29,9 +37,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #333; /* Màu xám đậm để nổi bật trên nền hồng */
+  color: #333;
   text-decoration: none;
   font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff6f61; /* Màu cam đỏ khi hover */
 }
 
 /* Section styles */
@@ -39,33 +52,31 @@ section {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #e7f6d5; /* Màu pastel xanh nhạt */
+  background-color: #e7f6d5;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  color: #2e4a2d; /* Màu xanh đậm phù hợp với nền xanh nhạt */
+  color: #2e4a2d;
 }
 
-/* About section */
-#about {
-  background-color: #d7eaf5; /* Màu pastel xanh dương nhạt */
-  color: #2a4d69; /* Màu xanh đậm hơn để tương phản */
+section h2 {
+  transition: color 0.3s ease;
 }
 
-/* Services section */
-#services {
-  background-color: #fbe7e4; /* Màu pastel hồng đào nhạt */
-  color: #5c3d2e; /* Màu nâu nhạt hợp với nền hồng đào */
+section h2:hover {
+  color: #4f9a94; /* Màu xanh ngọc nổi bật khi hover */
 }
 
-/* Contact section */
-#contact {
-  background-color: #fdeedc; /* Màu pastel kem nhạt */
-  color: #5b4328; /* Màu nâu ấm nhẹ cho nền kem */
+section p {
+  transition: color 0.3s ease;
+}
+
+section p:hover {
+  color: #7d4e57; /* Màu nâu hồng khi hover */
 }
 
 /* Footer */
 footer {
-  background: #ffd1dc; /* Màu pastel hồng nhẹ */
-  color: #333; /* Màu chữ xám đậm dễ đọc */
+  background: #ffd1dc;
+  color: #333;
   text-align: center;
   padding: 10px 0;
   position: fixed;
@@ -74,28 +85,10 @@ footer {
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Button styles */
-button {
-  background-color: #ffddcc; /* Màu pastel cam nhạt */
-  color: #333; /* Màu chữ tối để tương phản */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+footer p {
+  transition: color 0.3s ease;
 }
 
-button:hover {
-  background-color: #ffc4a3; /* Màu đậm hơn khi hover */
+footer p:hover {
+  color: #d86f8d; /* Màu hồng đậm khi hover */
 }
-
-/* Input fields */
-input[type="text"], input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff7eb; /* Màu nền pastel kem */
-  color: #333; /* Màu
