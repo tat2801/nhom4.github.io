@@ -75,19 +75,19 @@ section p:hover {
 
 /* About section */
 #about {
-  background-color: #fbe4d5; /* Màu xanh pastel lạnh */
+  background-color: #d4faee; /* Màu xanh pastel lạnh */
   color: #2a3e52; /* Màu xanh đậm */
 }
 
 /* Services section */
 #services {
-  background-color: #fbe4d5; /* Màu hồng cam nhạt */
+  background-color: #d4faee; /* Màu hồng cam nhạt */
   color: #5c4033; /* Màu nâu nhạt */
 }
 
 /* Contact section */
 #contact {
-  background-color: #fbe4d5; /* Màu cam pastel ấm nhạt */
+  background-color: #d4faee; /* Màu cam pastel ấm nhạt */
   color: #5c2c2e;
 }
 
