@@ -10,53 +10,41 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(to right, #fdd8b0, #fbc2c4); /* Gradient pastel ấm: cam đào -> hồng đào */
-  color: #5c2c2e; /* Màu chữ nâu đỏ đậm */
-  padding: 2rem 0;
+  background: #ffcbc1;
+  color: #333;
+  padding: 1rem 0;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  position: relative;
-  border-bottom: 5px solid #f9b7a8; /* Đường viền dưới màu cam nhạt */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-  font-size: 3rem;
-  font-family: 'Georgia', serif;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: color 0.3s ease; /* Hiệu ứng mượt khi đổi màu */
 }
 
 header h1:hover {
-  color: #f28c6f; /* Màu cam đào đậm hơn khi hover */
-  transform: scale(1.1);
+  color: #ff6f61; /* Màu cam đỏ nổi bật khi hover */
 }
 
-/* Decorative element: wavy line */
-header::after {
-  content: '';
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 150px;
-  height: 3px;
-  background: linear-gradient(to right, #f28c6f, #fbc2c4, #fdd8b0);
-  border-radius: 50px;
+/* Navigation menu */
+nav ul {
+  list-style: none;
+  padding: 0;
 }
 
-/* Subtitle */
-header p {
-  font-size: 1.2rem;
-  color: #5c2c2e;
-  margin-top: 10px;
-  position: relative;
-  z-index: 2;
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
   transition: color 0.3s ease;
 }
 
-header p:hover {
-  color: #f28c6f;
+nav ul li a:hover {
+  color: #ff6f61; /* Màu cam đỏ khi hover */
 }
 
 /* Section styles */
