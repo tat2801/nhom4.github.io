@@ -10,7 +10,7 @@ body {
 
 /* Header */
 header {
-  background: #ffcbf1; /* Màu hồng pastel nhẹ */
+  background: #ffc4ea; /* Màu hồng pastel nhẹ */
   color: #2a3e52; /* Màu xanh đậm */
   padding: 1rem 0;
   text-align: center;
@@ -75,19 +75,19 @@ section p:hover {
 
 /* About section */
 #about {
-  background-color: #b9e5d7; /* Màu xanh pastel lạnh */
+  background-color: #fbe4d5; /* Màu xanh pastel lạnh */
   color: #2a3e52; /* Màu xanh đậm */
 }
 
 /* Services section */
 #services {
-  background-color: #b9e5d7; /* Màu hồng cam nhạt */
+  background-color: #fbe4d5; /* Màu hồng cam nhạt */
   color: #5c4033; /* Màu nâu nhạt */
 }
 
 /* Contact section */
 #contact {
-  background-color: #b9e5d7; /* Màu cam pastel ấm nhạt */
+  background-color: #fbe4d5; /* Màu cam pastel ấm nhạt */
   color: #5c2c2e;
 }
 
