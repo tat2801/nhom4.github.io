@@ -4,13 +4,13 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #eaf8f9; /* Màu pastel xanh nhạt */
-  color: #444; /* Màu chữ xám đậm */
+  background-color: #fef8e4; /* Màu pastel xanh nhạt */
+  color: #555; /* Màu chữ xám đậm */
 }
 
 /* Header */
 header {
-  background: #cfe8f6; /* Màu xanh pastel nhạt */
+  background:#ffcbc1; /* Màu xanh pastel nhạt */
   color: #2a3e52; /* Màu chữ xanh đậm */
   padding: 1rem 0;
   text-align: center;
@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #2a3e52; /* Màu xanh đậm */
+  color: #333; /* Màu xanh đậm */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
@@ -52,7 +52,7 @@ section {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #edf2fb; /* Màu xanh tím nhạt */
+  background-color: #e7f6d5; /* Màu xanh tím nhạt */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   color: #2d4059; /* Màu xanh đậm cho chữ */
 }
@@ -75,26 +75,26 @@ section p:hover {
 
 /* About section */
 #about {
-  background-color: #d7e3fc; /* Màu xanh tím pastel lạnh */
+  background-color: #d7eaf5; /* Màu xanh tím pastel lạnh */
   color: #34495e; /* Màu xanh đậm hơn cho chữ */
 }
 
 /* Services section */
 #services {
-  background-color: #e3f0f3; /* Màu xanh ngọc pastel nhạt */
+  background-color: #fbe7e4; /* Màu xanh ngọc pastel nhạt */
   color: #2d4059; /* Màu xanh đậm */
 }
 
 /* Contact section */
 #contact {
-  background-color: #d6e6f2; /* Màu xanh pastel lạnh */
+  background-color: #fdeedc; /* Màu xanh pastel lạnh */
   color: #2c5364; /* Màu xanh đậm lạnh hơn */
 }
 
 /* Footer */
 footer {
-  background: #cfe8f6; /* Màu xanh pastel nhạt */
-  color: #2a3e52; /* Màu chữ xanh đậm */
+  background: #ffd1dc; /* Màu xanh pastel nhạt */
+  color: #333; /* Màu chữ xanh đậm */
   text-align: center;
   padding: 10px 0;
   position: fixed;
@@ -113,8 +113,8 @@ footer p:hover {
 
 /* Button styles */
 button {
-  background-color: #edf6f9; /* Màu pastel xanh rất nhạt */
-  color: #2a3e52; /* Màu chữ xanh đậm */
+  background-color: #ffddcc; /* Màu pastel xanh rất nhạt */
+  color: #333; /* Màu chữ xanh đậm */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -135,7 +135,7 @@ input[type="text"], input[type="email"] {
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #f0f4f8; /* Màu pastel xanh nhạt */
+  background-color: #fff7eb; /* Màu pastel xanh nhạt */
   color: #2a3e52; /* Màu chữ xanh đậm */
 }
 
