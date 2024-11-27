@@ -4,14 +4,14 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #e5f4fb; /* Màu xanh pastel lạnh */
+  background-color: #F7DFDF; /* Màu xanh pastel lạnh */
   color: #5c4033; /* Màu nâu nhạt cho chữ */
 }
 
 /* Header */
 header {
-  background: #ffc4ea; /* Màu hồng pastel nhẹ */
-  color: #2a3e52; /* Màu xanh đậm */
+  background: #EFBDBD; /* Màu hồng pastel nhẹ */
+  color: #703f3f; /* Màu xanh đậm */
   padding: 1rem 0;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -22,7 +22,7 @@ header h1 {
 }
 
 header h1:hover {
-  color: #ff6f61; /* Màu cam đỏ nổi bật khi hover */
+  color: #f5e1e1; /* Màu cam đỏ nổi bật khi hover */
 }
 
 /* Navigation menu */
@@ -37,14 +37,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #2a3e52; /* Màu xanh đậm */
+  color: #703f3f; /* Màu xanh đậm */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #ff6f61; /* Màu cam đỏ khi hover */
+  color: #f5e1e1; /* Màu cam đỏ khi hover */
 }
 
 /* Section styles */
@@ -52,9 +52,9 @@ section {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #fff7e6; /* Màu be nhạt */
+  background-color: #703f3f; /* Màu be nhạt */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  color: #5c4033; /* Màu nâu nhạt cho chữ */
+  color: #703f3f; /* Màu nâu nhạt cho chữ */
 }
 
 section h2 {
@@ -62,7 +62,7 @@ section h2 {
 }
 
 section h2:hover {
-  color: #f4a393; /* Màu cam đậm hơn khi hover */
+  color: #f5e1e1; /* Màu cam đậm hơn khi hover */
 }
 
 section p {
@@ -70,19 +70,19 @@ section p {
 }
 
 section p:hover {
-  color: #d68060; /* Màu nâu cam khi hover */
+  color: #e9eef5; /* Màu nâu cam khi hover */
 }
 
 /* About section */
 #about {
-  background-color: #d4faee; /* Màu xanh pastel lạnh */
-  color: #2a3e52; /* Màu xanh đậm */
+  background-color: #DAE9FA; /* Màu xanh pastel lạnh */
+  color:#446891; /* Màu xanh đậm */
 }
 
 /* Services section */
 #services {
-  background-color: #d4faee; /* Màu hồng cam nhạt */
-  color: #5c4033; /* Màu nâu nhạt */
+  background-color:#DAE9FA; /* Màu hồng cam nhạt */
+  color: #446891; /* Màu nâu nhạt */
 }
 
 /* Contact section */
