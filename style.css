@@ -93,8 +93,8 @@ section p:hover {
 
 /* Footer */
 footer {
-  background:#B6C867 ; /* Màu cam đào nhạt */
-  color: #616e27;
+  background:#2F4156; /* Màu cam đào nhạt */
+  color: #9ebbde;
   text-align: center;
   padding: 10px 0;
   position: fixed;
@@ -108,7 +108,7 @@ footer p {
 }
 
 footer p:hover {
-  color: #a6b858;
+  color: #9ebbde;
 }
 
 /* Button styles */
