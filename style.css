@@ -87,14 +87,14 @@ section p:hover {
 
 /* Contact section */
 #contact {
-  background-color: #d4faee; /* Màu cam pastel ấm nhạt */
-  color: #5c2c2e;
+  background-color:#DAE9FA; /* Màu cam pastel ấm nhạt */
+  color:#446891;
 }
 
 /* Footer */
 footer {
-  background: #fdd8b0; /* Màu cam đào nhạt */
-  color: #5c4033;
+  background:#B6C867 ; /* Màu cam đào nhạt */
+  color: #616e27;
   text-align: center;
   padding: 10px 0;
   position: fixed;
