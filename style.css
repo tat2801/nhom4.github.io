@@ -4,14 +4,14 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #F5EFEB; /* Cream color */
-  color: #2F4156; /* Deep blue for text */
+  background-color: #FFFCF5; /* Cloud (light cream) */
+  color: #374375; /* Navy for text */
 }
 
 /* Header */
 header {
-  background: #567C8D; /* Soft blue-gray */
-  color: #FFFFFF; /* White text */
+  background: #374375; /* Navy */
+  color: #FFFCF5; /* Cloud for text */
   padding: 1rem 0;
   text-align: center;
 }
@@ -21,7 +21,7 @@ header h1 {
 }
 
 header h1:hover {
-  color: #C8D9E6; /* Lighter pastel blue when hover */
+  color: #BABDE2; /* Periwinkle on hover */
 }
 
 /* Navigation menu */
@@ -36,14 +36,14 @@ nav ul li {
 }
 
 nav ul li a {
-  color: #C8D9E6; /* Light blue-gray */
+  color: #FFFCF5; /* Cloud */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-  color: #567C8D; /* Soft blue-gray on hover */
+  color: #BABDE2; /* Periwinkle on hover */
 }
 
 /* Section styles */
@@ -51,9 +51,9 @@ section {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #C8D9E6; /* Light blue-gray */
+  background-color: #BABDE2; /* Periwinkle */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  color: #2F4156; /* Deep blue text */
+  color: #374375; /* Navy for text */
 }
 
 section h2 {
@@ -61,7 +61,7 @@ section h2 {
 }
 
 section h2:hover {
-  color: #567C8D; /* Soft blue-gray on hover */
+  color: #895159; /* Maroon on hover */
 }
 
 section p {
@@ -69,31 +69,31 @@ section p {
 }
 
 section p:hover {
-  color: #567C8D; /* Soft blue-gray on hover */
+  color: #895159; /* Maroon on hover */
 }
 
 /* About section */
 #about {
-  background-color: #F5EFEB; /* Cream */
-  color: #2F4156; /* Deep blue */
+  background-color: #FFFCF5; /* Cloud */
+  color: #374375; /* Navy */
 }
 
 /* Services section */
 #services {
-  background-color: #F5EFEB; /* Cream */
-  color: #2F4156; /* Deep blue */
+  background-color: #FFFCF5; /* Cloud */
+  color: #374375; /* Navy */
 }
 
 /* Contact section */
 #contact {
-  background-color: #F5EFEB; /* Cream */
-  color: #2F4156; /* Deep blue */
+  background-color: #FFFCF5; /* Cloud */
+  color: #374375; /* Navy */
 }
 
 /* Footer */
 footer {
-  background: #2F4156; /* Deep blue */
-  color: #C8D9E6; /* Light blue-gray */
+  background: #374375; /* Navy */
+  color: #FFFCF5; /* Cloud */
   text-align: center;
   padding: 10px 0;
   position: fixed;
@@ -106,13 +106,13 @@ footer p {
 }
 
 footer p:hover {
-  color: #C8D9E6; /* Light blue-gray on hover */
+  color: #BABDE2; /* Periwinkle on hover */
 }
 
 /* Button styles */
 button {
-  background-color: #FFB6B9; /* Soft pink */
-  color: #2F4156; /* Deep blue */
+  background-color: #DFAEA1; /* Peach */
+  color: #374375; /* Navy */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
@@ -122,8 +122,8 @@ button {
 }
 
 button:hover {
-  background-color: #FF6F61; /* Soft coral */
-  color: #FFFFFF; /* White text */
+  background-color: #895159; /* Maroon on hover */
+  color: #FFFCF5; /* Cloud */
 }
 
 /* Input fields */
@@ -133,11 +133,11 @@ input[type="text"], input[type="email"] {
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #C8D9E6; /* Light blue-gray */
-  color: #2F4156; /* Deep blue */
+  background-color: #FFFCF5; /* Cloud */
+  color: #374375; /* Navy */
 }
 
 input[type="text"]::placeholder,
 input[type="email"]::placeholder {
-  color: #567C8D; /* Soft blue-gray */
+  color: #895159; /* Maroon */
 }
