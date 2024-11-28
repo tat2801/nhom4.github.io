@@ -1,29 +1,36 @@
-/* Reset một số thuộc tính mặc định */
+/* Reset all margins and paddings */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body và nền */
+/* Body and Background */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  background-color: #f5f7fa; /* Màu nền pastel sáng */
-  color: #333;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #f5f7fa, #fff1e6); /* Cream and light beige gradient */
+  color: #5c4033; /* Dark beige */
 }
 
 /* Header */
 header {
-  background-color: #ffcbc1; /* Màu hồng pastel */
-  padding: 20px;
+  background-color: #f0e2d9; /* Light beige */
+  color: #5c2c2e; /* Dark brown */
+  padding: 30px 20px;
   text-align: center;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
 }
 
 header h1 {
   font-size: 2.5rem;
   color: #5c2c2e;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Text color change effect */
+}
+
+header h1:hover {
+  color: #f28c6f; /* Change text color on hover */
 }
 
 header nav ul {
@@ -33,100 +40,169 @@ header nav ul {
 
 header nav ul li {
   display: inline;
-  margin: 0 15px;
+  margin: 0 20px;
 }
 
 header nav ul li a {
-  color: #5c2c2e;
   text-decoration: none;
+  color: #5c2c2e;
   font-weight: bold;
+  transition: color 0.3s ease; /* Add transition for hover effect */
 }
 
 header nav ul li a:hover {
-  color: #ff6f61; /* Màu khi hover */
+  color: #f28c6f; /* Change link color on hover */
 }
 
-/* Main content */
+/* Main Content Section */
 main {
   padding: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
-/* About section */
+/* About Section */
 #about {
-  background-color: #e5f4fb; /* Màu xanh pastel nhạt */
-  padding: 20px;
-  border-radius: 10px;
-  margin-bottom: 20px;
+  background-color: #fbe8d3; /* Soft cream color */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
 #about h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  margin-bottom: 15px;
   color: #5c2c2e;
+  transition: color 0.3s ease; /* Text color change effect */
 }
 
-/* Services section */
+#about h2:hover {
+  color: #f28c6f; /* Change heading color on hover */
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #7a5d4e;
+  line-height: 1.6;
+  transition: color 0.3s ease; /* Text color change effect */
+}
+
+#about p:hover {
+  color: #5c2c2e; /* Change paragraph color on hover */
+}
+
+/* Services Section */
 #services {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .service-item {
-  background-color: #fff7e6; /* Màu vàng nhạt */
+  background-color: #fff7e6; /* Soft cream color */
   width: 30%;
   padding: 20px;
   text-align: center;
   border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-10px); /* Hover effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
 .service-item img {
   width: 100%;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .service-item p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #5c2c2e;
+  font-weight: bold;
+  transition: color 0.3s ease; /* Text color change effect */
 }
 
-/* Contact section */
+.service-item p:hover {
+  color: #f28c6f; /* Change service text color on hover */
+}
+
+/* Contact Section */
 #contact {
-  background-color: #fbe4d5; /* Màu hồng cam nhạt */
-  padding: 20px;
-  border-radius: 10px;
+  background-color: #ffefd5; /* Light cream pastel */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  font-size: 2rem;
+  color: #5c2c2e;
+  margin-bottom: 20px;
+  transition: color 0.3s ease; /* Text color change effect */
+}
+
+#contact h2:hover {
+  color: #f28c6f; /* Change heading color on hover */
 }
 
 #contact form {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 #contact input, #contact textarea {
-  padding: 10px;
-  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  border-radius: 10px;
   border: 1px solid #ddd;
-  border-radius: 5px;
+  color: #5c2c2e;
+  transition: border-color 0.3s ease; /* Border color change effect */
+}
+
+#contact input:hover, #contact textarea:hover {
+  border-color: #f28c6f; /* Change border color on hover */
 }
 
 #contact button {
-  background-color: #ff6f61; /* Màu cam pastel */
+  background-color: #f28c6f; /* Soft coral button */
   color: white;
-  padding: 10px;
+  padding: 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 #contact button:hover {
-  background-color: #f4a393; /* Màu cam đậm khi hover */
+  background-color: #f4a393; /* Darker coral when hovered */
 }
 
 /* Footer */
 footer {
-  background-color: #f5f7fa;
-  padding: 10px;
+  background-color: #f0e2d9;
+  padding: 10px 0;
   text-align: center;
-  margin-top: 40px;
+  color: #5c4033;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  font-size: 1rem;
+  transition: color 0.3s ease; /* Text color change effect */
+}
+
+footer p:hover {
+  color: #f28c6f; /* Change footer text color on hover */
 }
