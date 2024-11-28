@@ -15,6 +15,7 @@ body {
   min-height: 100vh;
   align-items: center;
   padding: 20px;
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-weave.png'); /* Subtle texture pattern */
 }
 
 /* Main content wrapper */
@@ -25,11 +26,12 @@ body {
   background-color: #FFFFFF; /* White background for content */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
-/* Header */
+/* Adding subtle background gradient to sections */
 header {
-  background-color: #567C8D; /* Soft blue-gray */
+  background: linear-gradient(to bottom, #567C8D, #2F4156); /* Gradient from medium blue to deep blue */
   color: #FFFFFF; /* White text */
   padding: 30px 20px;
   text-align: center;
@@ -37,39 +39,20 @@ header {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  font-size: 2.5rem;
-  color: #FFFFFF; /* White heading text */
-  margin-bottom: 10px;
-  transition: color 0.3s ease;
+/* Subtle Decorative Circles in the Header */
+header::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-header h1:hover {
-  color: #C8D9E6; /* Light blue hover effect */
-}
-
-header nav ul {
-  list-style: none;
-  padding: 10px 0;
-}
-
-header nav ul li {
-  display: inline;
-  margin: 0 20px;
-}
-
-header nav ul li a {
-  text-decoration: none;
-  color: #FFFFFF; /* White text for links */
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-header nav ul li a:hover {
-  color: #C8D9E6; /* Light blue hover effect for links */
-}
-
-/* Main Content Section */
+/* Main content section */
 main {
   padding: 40px;
   display: flex;
@@ -84,6 +67,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
+  position: relative;
 }
 
 #about h2 {
@@ -97,15 +81,19 @@ main {
   color: #567C8D; /* Soft blue-gray on hover */
 }
 
-#about p {
-  font-size: 1.2rem;
-  color: #2F4156; /* Deep blue for readability */
-  line-height: 1.6;
-  transition: color 0.3s ease;
-}
-
-#about p:hover {
-  color: #567C8D; /* Soft blue-gray on hover */
+/* Adding soft background design */
+#about::before {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+  background-color: #F5EFEB; /* Cream background */
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: -1;
 }
 
 /* Services Section */
@@ -116,6 +104,17 @@ main {
   flex-wrap: wrap;
 }
 
+#services h2 {
+  font-size: 2rem;
+  color: #2F4156; /* Deep blue text */
+  margin-bottom: 20px;
+  transition: color 0.3s ease;
+}
+
+#services h2:hover {
+  color: #567C8D; /* Soft blue-gray on hover */
+}
+
 .service-item {
   background-color: #F5EFEB; /* Warm cream for items */
   width: 30%;
@@ -124,26 +123,26 @@ main {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
+  position: relative;
 }
 
+/* Adding decoration to service items */
+.service-item::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: #567C8D; /* Soft blue-gray circle */
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Service Item Hover Effect */
 .service-item:hover {
   transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.service-item h3 {
-  font-size: 1.5rem;
-  color: #2F4156; /* Deep blue for service headings */
-  margin-bottom: 10px;
-}
-
-.service-item p {
-  font-size: 1.1rem;
-  color: #567C8D; /* Soft blue-gray text */
-}
-
-.service-item p:hover {
-  color: #2F4156; /* Deep blue text on hover */
 }
 
 /* Contact Section */
@@ -171,6 +170,7 @@ main {
   gap: 20px;
 }
 
+/* Contact input fields with border */
 #contact input, #contact textarea {
   padding: 15px;
   font-size: 1rem;
@@ -184,8 +184,9 @@ main {
   border-color: #567C8D; /* Soft blue-gray border on hover */
 }
 
+/* Button styles with a gradient */
 #contact button {
-  background-color: #567C8D; /* Soft blue-gray button */
+  background: linear-gradient(to right, #567C8D, #2F4156); /* Soft blue to deep blue gradient */
   color: #FFFFFF;
   padding: 15px;
   border: none;
