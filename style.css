@@ -11,7 +11,7 @@ body {
 /* Header */
 header {
   background: #567C8D; /* Màu hồng pastel nhẹ */
-  color: #84adbf; /* Màu xanh đậm */
+  color: #2F4156; /* Màu xanh đậm */
   padding: 1rem 0;
   text-align: center;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -37,7 +37,7 @@ nav ul li {
 }
 
 nav ul li a {
-  color:#84adbf; /* Màu xanh đậm */
+  color:#ebf7fc; /* Màu xanh đậm */
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
