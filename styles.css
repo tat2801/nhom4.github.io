@@ -8,29 +8,44 @@
 /* Body and Background */
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom right, #f5f7fa, #fff1e6); /* Cream and light beige gradient */
-  color: #5c4033; /* Dark beige */
+  background-color: #F5EFEB; /* Warm cream background */
+  color: #2F4156; /* Deep blue for text */
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main content wrapper */
+.main-wrapper {
+  width: 80%;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #FFFFFF; /* White background for content */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
 header {
-  background-color: #f0e2d9; /* Light beige */
-  color: #5c2c2e; /* Dark brown */
+  background-color: #567C8D; /* Soft blue-gray */
+  color: #FFFFFF; /* White text */
   padding: 30px 20px;
   text-align: center;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 15px;
 }
 
 header h1 {
   font-size: 2.5rem;
-  color: #5c2c2e;
+  color: #FFFFFF; /* White heading text */
   margin-bottom: 10px;
-  transition: color 0.3s ease; /* Text color change effect */
+  transition: color 0.3s ease;
 }
 
 header h1:hover {
-  color: #f28c6f; /* Change text color on hover */
+  color: #C8D9E6; /* Light blue hover effect */
 }
 
 header nav ul {
@@ -45,13 +60,13 @@ header nav ul li {
 
 header nav ul li a {
   text-decoration: none;
-  color: #5c2c2e;
+  color: #FFFFFF; /* White text for links */
   font-weight: bold;
-  transition: color 0.3s ease; /* Add transition for hover effect */
+  transition: color 0.3s ease;
 }
 
 header nav ul li a:hover {
-  color: #f28c6f; /* Change link color on hover */
+  color: #C8D9E6; /* Light blue hover effect for links */
 }
 
 /* Main Content Section */
@@ -64,9 +79,9 @@ main {
 
 /* About Section */
 #about {
-  background-color: #fbe8d3; /* Soft cream color */
+  background-color: #C8D9E6; /* Light blue background */
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
@@ -74,23 +89,23 @@ main {
 #about h2 {
   font-size: 2.2rem;
   margin-bottom: 15px;
-  color: #5c2c2e;
-  transition: color 0.3s ease; /* Text color change effect */
+  color: #2F4156; /* Deep blue text */
+  transition: color 0.3s ease;
 }
 
 #about h2:hover {
-  color: #f28c6f; /* Change heading color on hover */
+  color: #567C8D; /* Soft blue-gray on hover */
 }
 
 #about p {
   font-size: 1.2rem;
-  color: #7a5d4e;
+  color: #2F4156; /* Deep blue for readability */
   line-height: 1.6;
-  transition: color 0.3s ease; /* Text color change effect */
+  transition: color 0.3s ease;
 }
 
 #about p:hover {
-  color: #5c2c2e; /* Change paragraph color on hover */
+  color: #567C8D; /* Soft blue-gray on hover */
 }
 
 /* Services Section */
@@ -102,7 +117,7 @@ main {
 }
 
 .service-item {
-  background-color: #fff7e6; /* Soft cream color */
+  background-color: #F5EFEB; /* Warm cream for items */
   width: 30%;
   padding: 20px;
   text-align: center;
@@ -112,44 +127,42 @@ main {
 }
 
 .service-item:hover {
-  transform: translateY(-10px); /* Hover effect */
+  transform: translateY(-10px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-.service-item img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
+.service-item h3 {
+  font-size: 1.5rem;
+  color: #2F4156; /* Deep blue for service headings */
+  margin-bottom: 10px;
 }
 
 .service-item p {
   font-size: 1.1rem;
-  color: #5c2c2e;
-  font-weight: bold;
-  transition: color 0.3s ease; /* Text color change effect */
+  color: #567C8D; /* Soft blue-gray text */
 }
 
 .service-item p:hover {
-  color: #f28c6f; /* Change service text color on hover */
+  color: #2F4156; /* Deep blue text on hover */
 }
 
 /* Contact Section */
 #contact {
-  background-color: #ffefd5; /* Light cream pastel */
+  background-color: #FFFFFF; /* White background for the contact form */
   padding: 30px;
-  border-radius: 15px;
+  border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 #contact h2 {
   font-size: 2rem;
-  color: #5c2c2e;
+  color: #2F4156; /* Deep blue text */
   margin-bottom: 20px;
-  transition: color 0.3s ease; /* Text color change effect */
+  transition: color 0.3s ease;
 }
 
 #contact h2:hover {
-  color: #f28c6f; /* Change heading color on hover */
+  color: #567C8D; /* Soft blue-gray on hover */
 }
 
 #contact form {
@@ -163,17 +176,17 @@ main {
   font-size: 1rem;
   border-radius: 10px;
   border: 1px solid #ddd;
-  color: #5c2c2e;
-  transition: border-color 0.3s ease; /* Border color change effect */
+  color: #2F4156; /* Deep blue text */
+  transition: border-color 0.3s ease;
 }
 
 #contact input:hover, #contact textarea:hover {
-  border-color: #f28c6f; /* Change border color on hover */
+  border-color: #567C8D; /* Soft blue-gray border on hover */
 }
 
 #contact button {
-  background-color: #f28c6f; /* Soft coral button */
-  color: white;
+  background-color: #567C8D; /* Soft blue-gray button */
+  color: #FFFFFF;
   padding: 15px;
   border: none;
   border-radius: 10px;
@@ -183,15 +196,15 @@ main {
 }
 
 #contact button:hover {
-  background-color: #f4a393; /* Darker coral when hovered */
+  background-color: #2F4156; /* Deep blue on hover */
 }
 
 /* Footer */
 footer {
-  background-color: #f0e2d9;
+  background-color: #C8D9E6; /* Light blue background */
   padding: 10px 0;
   text-align: center;
-  color: #5c4033;
+  color: #2F4156; /* Deep blue text */
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   bottom: 0;
@@ -200,9 +213,9 @@ footer {
 
 footer p {
   font-size: 1rem;
-  transition: color 0.3s ease; /* Text color change effect */
+  transition: color 0.3s ease;
 }
 
 footer p:hover {
-  color: #f28c6f; /* Change footer text color on hover */
+  color: #567C8D; /* Soft blue-gray on hover */
 }
