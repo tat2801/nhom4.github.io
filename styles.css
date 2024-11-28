@@ -29,14 +29,24 @@ body {
   position: relative;
 }
 
-/* Adding subtle background gradient to sections */
+/* Header */
 header {
-  background: linear-gradient(to bottom, #567C8D, #2F4156); /* Gradient from medium blue to deep blue */
+  background-color: #567C8D; /* Original soft blue-gray */
   color: #FFFFFF; /* White text */
   padding: 30px 20px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Hover Effects */
+header h1 {
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+header h1:hover {
+  color: #FFFFFF; /* White text when hovering */
 }
 
 /* Subtle Decorative Circles in the Header */
