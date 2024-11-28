@@ -135,8 +135,8 @@ input[type="text"], input[type="email"] {
   margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
-  background-color: #fff5eb; /* Màu be nhạt */
-  color: #5c2c2e;
+  background-color:#567C8D; /* Màu be nhạt */
+  color: #2F4156;
 }
 
 input[type="text"]::placeholder,
