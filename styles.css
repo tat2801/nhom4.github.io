@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #CCCEED; /* Light Cloud */
+  color: #374375; /* Navy */
+}
+
+/* Header */
+header {
+  background: #374375; /* Navy */
+  color: #FFFCF5; /* Cloud */
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  transition: color 0.3s ease;
+}
+
+header h1:hover {
+  color: #BABDE2; /* Periwinkle */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #FFFCF5; /* Cloud */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #DFAEA1; /* Peach */
+}
+
+/* About Section */
+#about {
+  background-color: #FFFCF5; /* Cloud */
+  color: #374375; /* Navy */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 5px solid #DFAEA1; /* Peach */
+}
+
+.profile h2 {
+  color: #895159; /* Maroon */
+  margin: 10px 0;
+}
+
+.profile p {
+  color: #374375; /* Navy */
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #374375; /* Navy */
+  color: #FFFCF5; /* Cloud */
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
