@@ -5,6 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Me</title>
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Button style */
+    .home-button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #FFFCF5; /* Cloud */
+      background-color: #374375; /* Navy */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #BABDE2; /* Periwinkle */
+      color: #374375; /* Navy */
+    }
+
+    /* Center the button in its section */
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -24,23 +52,32 @@
     <div class="container">
       <div class="profile">
         <img src="avatar.jpg" alt="My Avatar">
-        <h2>Xin chào, tôi là Trần Anh Thư</h2>
-        <p>Bạn có thể gọi tôi là TAT, athuw hoặc Thư Trần!</p>
+        <h2>Xin chào, tôi là Trần Anh Thư!</h2>
+        <p>Bạn có thể gọi tôi là TAT, athuw hoặc Thư Trần</p>
+      </div>
+      <!-- Back to Home Button -->
+      <div class="button-container">
+        <button class="home-button" onclick="goToHomepage()">Home</button>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
+    <p> 2024 Trần Anh Thư</p>
   </footer>
 
-  <!-- JavaScript for Shortcut -->
+  <!-- JavaScript -->
   <script>
+    // Function to redirect to the homepage
+    function goToHomepage() {
+      window.location.href = 'https://tat2801.github.io/nhom4.github.io/';
+    }
+
     // Listen for Alt + H to go to the homepage
     document.addEventListener('keydown', function(event) {
       if (event.altKey && event.key.toLowerCase() === 'h') {
-        window.location.href = '#'; // Replace '#' with your homepage URL if different
+        goToHomepage();
       }
     });
   </script>
