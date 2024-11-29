@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #FFFCF5; /* Cloud (light cream) */
+  background-color: #ccceed; /* Cloud (light cream) */
   color: #374375; /* Navy for text */
 }
 
@@ -51,7 +51,7 @@ section {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #BABDE2; /* Periwinkle */
+  background-color: #cacce8; /* Periwinkle */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   color: #374375; /* Navy for text */
 }
