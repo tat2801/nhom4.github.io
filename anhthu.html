@@ -9,12 +9,12 @@
 <body>
   <!-- Header -->
   <header>
-    <h1>Welcome to My Personal Page</h1>
+    <h1>Thông tin về Trần Anh Thư</h1>
     <nav>
       <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#services">What I Do</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#services">Sở thích</a></li>
+        <li><a href="#contact">Trang cá nhân</a></li>
       </ul>
     </nav>
   </header>
@@ -24,8 +24,8 @@
     <div class="container">
       <div class="profile">
         <img src="avatar.jpg" alt="My Avatar">
-        <h2>Hello, I'm [Your Name]</h2>
-        <p>I'm a [Your Profession or Hobby] who loves [Your Interest]. Welcome to my personal website where I share my journey, skills, and passions. Let's connect and explore more together!</p>
+        <h2>Xin chào, tôi là Trần Anh Thư</h2>
+        <p>Bạn có thể gọi tôi là TAT, athuw hoặc Thư Trần!</p>
       </div>
     </div>
   </section>
@@ -34,5 +34,15 @@
   <footer>
     <p>&copy; 2024 [Your Name]. All Rights Reserved.</p>
   </footer>
+
+  <!-- JavaScript for Shortcut -->
+  <script>
+    // Listen for Alt + H to go to the homepage
+    document.addEventListener('keydown', function(event) {
+      if (event.altKey && event.key.toLowerCase() === 'h') {
+        window.location.href = '#'; // Replace '#' with your homepage URL if different
+      }
+    });
+  </script>
 </body>
 </html>
