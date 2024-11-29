@@ -14,7 +14,7 @@
       font-size: 16px;
       font-weight: bold;
       color: #FFFCF5; /* Cloud */
-      background-color: #DFAEA1; /* Navy */
+      background-color: #916256; /* Navy */
       border: none;
       border-radius: 5px;
       cursor: pointer;
@@ -23,7 +23,7 @@
     }
 
     .home-button:hover {
-      background-color: #edd3cc; /* Periwinkle */
+      background-color: #DFAEA1; /* Periwinkle */
       color: #895159; /* Navy */
     }
 
@@ -32,7 +32,18 @@
       text-align: center;
       margin-top: 20px;
     }
+
+    /* Center iframe */
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
   </style>
+</head>
+<body>
+  <!-- Header -->
   <header>
     <h1>Thông tin về Trần Anh Thư</h1>
     <nav>
@@ -54,31 +65,38 @@
         <p>Ngày sinh: <b>28/01/2007</b></p>
         <p>Cung hoàng đạo: <b>Bảo Bình</b></p>
       </div>
-        </section>
+    </div>
+  </section>
 
-      <section id="services">
+  <!-- Services Section -->
+  <section id="services">
     <h2>Sở thích của tôi</h2>
     <ul>
-    <li>Tôi thích nghe nhạc, vẽ tranh, đọc truyện tranh và ngắm nhìn những thứ xinh đẹp.</li>
-    <li>Những nhóm nhạc mà tôi yêu thích: Newjeans, aespa, Red Velvet.</li>
-    <li>Bài hát yêu thích:</li>
+      <li>Tôi thích nghe nhạc, vẽ tranh, đọc truyện tranh và ngắm nhìn những thứ xinh đẹp.</li>
+      <li>Những nhóm nhạc mà tôi yêu thích: Newjeans, aespa, Red Velvet.</li>
+      <li>Bài hát yêu thích:</li>
     </ul>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/pSUydWEqKwE?si=EJO20DBY0pYK4XLV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pSUydWEqKwE?si=EJO20DBY0pYK4XLV" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
     <h2>Liên hệ với tôi</h2>
-    <p>Email: thutran2264826@gmail.com</p>
-    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100054224374641&locale=vi_VN"_blank">https://www.facebook.com/profile.php?id=100054224374641&locale=vi_VN</a></p>
+    <ul>
+      <li>Email: thutran2264826@gmail.com</li>
+      <li>Facebook: <a href="https://www.facebook.com/profile.php?id=100054224374641&locale=vi_VN" target="_blank">Facebook cá nhân</a></li>
+    </ul>
   </section>
       
-      <!-- Back to Home Button -->
-      <div class="button-container">
-        <button class="home-button" onclick="goToHomepage()">Home</button>
-      </div>
-    </div>
-  </section>
+  <!-- Back to Home Button -->
+  <div class="button-container">
+    <button class="home-button" onclick="goToHomepage()">Home</button>
+  </div>
 
   <!-- JavaScript -->
   <script>
