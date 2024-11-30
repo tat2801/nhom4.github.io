@@ -92,7 +92,7 @@ background-color: rgba(223, 174, 161, 0.2);/* Nhạt màu Periwinkle */
   background-color: #edc2b7; /* Peach nhạt */
   padding: 15px;
   border-radius: 10px;
-  width: 200px;
+  width: 300px;
   text-align: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
