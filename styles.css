@@ -22,7 +22,7 @@ header h1 {
 }
 
 header h1:hover {
-  color: #BABDE2; /* Periwinkle */
+  color: #FFFCF5; /* Periwinkle */
 }
 
 nav ul {
@@ -44,7 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #DFAEA1; /* Peach */
+  color: #BABDE2; /* Peach */
 }
 
 /* About Section */
