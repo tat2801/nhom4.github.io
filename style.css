@@ -65,7 +65,7 @@ section {
 
 section:hover {
   transform: translateY(-5px);
-  background-color: rgba(223, 174, 161, 0.3); /* Đậm hơn chút khi hover */
+  background-color: rgba(186, 189, 226, 0.2)); /* Đậm hơn chút khi hover */
 }
 
 /* Thành viên */
@@ -98,7 +98,7 @@ section:hover {
 
 .member:hover {
   transform: translateY(-10px);
-  background-color: rgba(223, 174, 161, 0.3); /* Peach nhạt hơn */
+  background-color: #edc2b7; /* Peach nhạt */
 }
 
 .member h4 {
