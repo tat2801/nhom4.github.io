@@ -56,10 +56,17 @@
 			<option value="hocsinh"> Học sinh </option>
 		</select>	
 	      <br>
-	<label> Giới tính: </label>
-		<input type="radio" id="gioitinh1" name="gioitinh" value="nam">Nam
-		<input type="radio" id="gioitinh2" name="gioitinh" value="nu">Nữ
-		<input type="radio" id="gioitinh3" name="gioitinh" value="iykyk">IYKYK
+	<label>Giới tính:</label>
+<div class="radio-group">
+  <input type="radio" id="gioitinh1" name="gioitinh" value="nam">
+  <label for="gioitinh1">Nam</label>
+  
+  <input type="radio" id="gioitinh2" name="gioitinh" value="nu">
+  <label for="gioitinh2">Nữ</label>
+  
+  <input type="radio" id="gioitinh3" name="gioitinh" value="iykyk">
+  <label for="gioitinh3">IYKYK</label>
+</div>
 	      <br>
 	<label for="ngaysinh"> Ngày sinh: </label>
 		<input type="date" id="ngaysinh">
