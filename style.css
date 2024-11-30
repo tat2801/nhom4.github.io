@@ -68,7 +68,7 @@ nav ul li a:hover {
 .team-members {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   flex-wrap: wrap;
 }
 
