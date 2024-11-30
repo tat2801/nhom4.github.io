@@ -51,7 +51,7 @@ section {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #f5d0c6; /* Periwinkle */
+  background-color: #f0d3cc; /* Periwinkle */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   color: #374375; /* Navy for text */
 }
@@ -78,7 +78,7 @@ section p:hover {
   color: #374375; /* Navy */
 }
 .team {
-  background-color: #fbe4d5; /* Màu hồng cam nhạt pastel */
+  background-color: #FFFCF5; /* Màu hồng cam nhạt pastel */
   padding: 40px 0;
   text-align: center;
 }
@@ -100,7 +100,7 @@ section p:hover {
 
 /* Thẻ thành viên */
 .member {
-  background-color: #fff7e6; /* Màu be nhạt pastel */
+  background-color: #FFFCF5; /* Màu be nhạt pastel */
   border-radius: 15px;
   padding: 20px;
   width: 200px;
