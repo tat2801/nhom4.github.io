@@ -1,14 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8"
-	<title> <b>Nguyễn Thị Quế Trân</b> </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Button style */
+    .home-button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #FFFCF5; /* Cloud */
+      background-color: #916256; /* Navy */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #DFAEA1; /* Periwinkle */
+      color: #895159; /* Navy */
+    }
+
+    /* Center the button in its section */
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Center iframe */
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+  </style>
 </head>
 <body>
-	<div>
-		<img src="quetran.jpg" width="300">
-    <h1> Tên: Nguyễn Thị Quế Trân</h1>
-    <h2> Ngày sinh: 19/04/2007</h2>
-	</div>
+  <!-- Header -->
+  <header>
+    <h1>Thông tin về Nguyễn Thị Quế Trân</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#services">Sở thích</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <div class="profile">
+        <img src="avatar.jpg" alt="My Avatar">
+        <h2>Xin chào, tôi là <b>Nguyễn Thị Quế Trân</b>!</h2>
+        <p>Bạn có thể gọi tôi là <b>...</b>, <b>...</b> hoặc <b>...</b></p>
+        <p>Ngày sinh: <b>19/04/2007</b></p>
+        <p>Cung hoàng đạo: <b>Bạch Dương</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Sở thích của tôi</h2>
+    <ul>
+      <li>...</li>
+      <li>...</li>
+      <li>...</li>
+    </ul>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pSUydWEqKwE?si=EJO20DBY0pYK4XLV" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Liên hệ với tôi</h2>
+    <ul>
+      <li>Email: ...@gmail.com</li>
+      <li>Facebook: <a href="https://www.facebook.com/profile.php?id=61565994533291&locale=vi_VN" target="_blank">https://www.facebook.com/profile.php?id=61565994533291&locale=vi_VN</a></li>
+    </ul>
+  </section>
+      
+  <!-- Back to Home Button -->
+  <div class="button-container">
+    <button class="home-button" onclick="goToHomepage()">Home</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Function to redirect to the homepage
+    function goToHomepage() {
+      window.location.href = 'https://tat2801.github.io/nhom4.github.io/';
+    }
+
+    // Listen for Alt + H to go to the homepage
+    document.addEventListener('keydown', function(event) {
+      if (event.altKey && event.key.toLowerCase() === 'h') {
+        goToHomepage();
+      }
+    });
+  </script>
 </body>
 </html>
