@@ -65,12 +65,12 @@ section {
 
 section:hover 
   transform: translateY(-5px);
-  background-color: rgba(223, 174, 161, 0); /* Đậm hơn chút khi hover */
+ /* Đậm hơn chút khi hover */
 }
 
 /* Thành viên */
 #about {
-  background-color: rgba(223, 174, 161, 0.00); /* Nhạt màu Periwinkle */
+/* Nhạt màu Periwinkle */
 }
 
 #about h2 {
