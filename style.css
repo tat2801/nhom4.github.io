@@ -56,8 +56,8 @@ main {
 }
 
 section {
-  margin-bottom: 40px;
-  padding: 20px;
+  margin-bottom: 0px;
+  padding: 0px;
   border-radius: 10px;
   background-color: rgba(223, 174, 161, 0.2); /* Nhạt màu Periwinkle */
   transition: transform 0.3s ease, background-color 0.3s ease;
