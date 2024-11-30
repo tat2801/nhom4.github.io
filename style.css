@@ -64,8 +64,8 @@ section {
 }
 
 section:hover 
-  transform: translateY(-5px);
-background-color: rgba(223, 174, 161, 0.2);
+  {transform: translateY(-5px);
+  background-color: rgba(223, 174, 161, 0.2);
  /* Đậm hơn chút khi hover */
 }
 
@@ -84,7 +84,7 @@ background-color: rgba(223, 174, 161, 0.2);/* Nhạt màu Periwinkle */
 .team {
   display: flex;
   justify-content: center;
-  gap: 55px;
+  gap: 15px;
   flex-wrap: wrap;
 }
 
@@ -102,17 +102,17 @@ background-color: rgba(223, 174, 161, 0.2);/* Nhạt màu Periwinkle */
   background-color: #edc2b7; /* Peach nhạt */
 }
 
-.member h4 {
-  color: #374375; /* Navy */
-  margin-bottom: 5px;
+.member h3 {
+  color: rgb(58, 2, 0); /* Navy */
+  margin-bottom: 3px;
   transition: color 0.3s ease;
 }
 
-.member h4:hover {
+.member h3:hover {
   color: #FFFCF5; /* Cloud */
 }
 
-.member h5 {
+.member h4 {
   color: #895159; /* Dark Peach */
 }
 
