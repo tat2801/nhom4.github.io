@@ -2,5 +2,5 @@ document.getElementById('contactForm').addEventListener('submit', function (even
   event.preventDefault();
   const name = document.getElementById('name').value;
   const email = document.getElementById('email').value;
-  alert(`Thank you, ${name}! We will contact you at ${email}.`);
+  alert(`Cảm ơn, ${name}! Chúng tôi sẽ sớm liên hệ với bạn tại email ${email}.`);
 });
