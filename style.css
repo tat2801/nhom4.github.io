@@ -46,7 +46,7 @@ nav ul li a:hover {
   color: #BABDE2; /* Periwinkle on hover */
 }
 
-section {
+#about {
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -71,11 +71,6 @@ section p:hover {
   color: #7da1a6; /* Màu xanh nhạt hơn khi hover */
 }
 
-/* About section */
-#about {
-  background-color: #FFFCF5; /* Cloud */
-  color: #374375; /* Navy */
-}
 .team {
   background-color: #FFFCF5; /* Màu hồng cam nhạt pastel */
   padding: 40px 0;
