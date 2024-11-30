@@ -59,7 +59,7 @@ section {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(223, 174, 161, 0); /* Nhạt màu Periwinkle */
+  background-color: rgba(223, 174, 161, 0.2); /* Nhạt màu Periwinkle */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -70,7 +70,7 @@ section:hover
 
 /* Thành viên */
 #about {
-  background-color: rgba(223, 174, 161, 0.1); /* Nhạt màu Periwinkle */
+  background-color: rgba(223, 174, 161, 0.00); /* Nhạt màu Periwinkle */
 }
 
 #about h2 {
@@ -127,7 +127,7 @@ section:hover
 
 /* Bài tập */
 #services {
-  background-color: rgba(186, 189, 226, 0.1); /* Periwinkle nhạt */
+  background-color: rgba(186, 189, 226, 0.22); /* Periwinkle nhạt */
 }
 
 #services h2 {
@@ -150,7 +150,7 @@ section:hover
 
 /* Form đăng kí */
 #contact {
-  background-color: rgba(223, 174, 161, 0.1); /* Peach nhạt */
+  background-color: rgba(223, 174, 161, 0.2); /* Peach nhạt */
 }
 
 #contact h2 {
