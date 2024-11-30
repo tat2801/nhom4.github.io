@@ -165,6 +165,25 @@ form label {
   font-weight: bold;
 }
 
+form .radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Khoảng cách giữa các lựa chọn */
+  margin-bottom: 15px;
+}
+
+.radio-group input[type="radio"] {
+  margin: 0; /* Xóa khoảng cách mặc định của ô radio */
+  transform: scale(1.2); /* Tăng kích thước radio nếu cần */
+}
+
+.radio-group label {
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+  color: #374375; /* Navy */
+}
+
 form input, form select {
   width: 100%;
   padding: 10px;
