@@ -59,7 +59,7 @@ section {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(223, 174, 161, 0.2); /* Nhạt màu Peach */
+  background-color: rgba(186, 189, 226, 0.2); /* Nhạt màu Periwinkle */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -88,7 +88,7 @@ section:hover {
 }
 
 .member {
-  background-color: rgba(186, 189, 226, 0.3); /* Periwinkle nhạt */
+  background-color: #edc2b7; /* Peach nhạt */
   padding: 15px;
   border-radius: 10px;
   width: 200px;
