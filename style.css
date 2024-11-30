@@ -88,8 +88,10 @@ section p:hover {
 .team-members {
   display: flex;
   justify-content: center;
+  align-items: stretch;
   gap: 10px;
   flex-wrap: wrap;
+  padding: 0 20px; /
 }
 
 /* Thẻ thành viên */
