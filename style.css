@@ -46,6 +46,31 @@ nav ul li a:hover {
   color: #BABDE2; /* Periwinkle on hover */
 }
 
+section {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #edf2fb; /* Màu xanh tím nhạt */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  color: #2d4059; /* Màu xanh đậm cho chữ */
+}
+
+section h2 {
+  transition: color 0.3s ease;
+}
+
+section h2:hover {
+  color: #a5c9ca; /* Màu xanh pastel lạnh nhạt hơn khi hover */
+}
+
+section p {
+  transition: color 0.3s ease;
+}
+
+section p:hover {
+  color: #7da1a6; /* Màu xanh nhạt hơn khi hover */
+}
+
 /* About section */
 #about {
   background-color: #FFFCF5; /* Cloud */
