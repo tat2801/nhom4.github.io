@@ -59,13 +59,13 @@ section {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(186, 189, 226, 0.2); /* Nhạt màu Periwinkle */
+  background-color: rgba(186, 189, 226, 1); /* Nhạt màu Periwinkle */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-section:hover {
+section:hover 
   transform: translateY(-5px);
-  background-color: rgba(186, 189, 226, 0.2)); /* Đậm hơn chút khi hover */
+  background-color: rgba(186, 189, 226, 1)); /* Đậm hơn chút khi hover */
 }
 
 /* Thành viên */
