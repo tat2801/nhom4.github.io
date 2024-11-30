@@ -84,7 +84,7 @@ background-color: rgba(223, 174, 161, 0.2);/* Nhạt màu Periwinkle */
 .team {
   display: flex;
   justify-content: center;
-  gap: px;
+  gap: 55px;
   flex-wrap: wrap;
 }
 
