@@ -59,7 +59,7 @@ section {
   margin-bottom: 40px;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(223, 174, 161, 0.2); /* Nhạt màu Periwinkle */
+  background-color: rgba(223, 174, 161, 0); /* Nhạt màu Periwinkle */
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
@@ -83,7 +83,7 @@ section:hover
 .team {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: px;
   flex-wrap: wrap;
 }
 
