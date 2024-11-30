@@ -124,7 +124,7 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
 }
 
 .member-link:hover {
-  color: #FF6F61; /* Orange-red */
+  color:  rgba(223, 174, 161, 0.5); /* Orange-red */
 }
 
 /* Bài tập */
@@ -134,7 +134,7 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
 
 #services h2 {
   color: #374375; /* Navy */
-  text-align: ;
+  text-align: center;
   font-size: 2rem;
 }
 
@@ -157,7 +157,7 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
 
 #contact h2 {
   color: #895159; /* Dark Peach */
-  text-align: ;
+  text-align: center;
   font-size: 2rem;
 }
 
