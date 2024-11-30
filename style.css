@@ -104,6 +104,7 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
 
 .member h3 {
   color: rgb(58, 2, 0); /* Navy */
+  text-align: center;
   margin-bottom: 3px;
   transition: color 0.3s ease;
 }
