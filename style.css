@@ -1,33 +1,31 @@
-/* Đặt màu nền toàn trang */
+/* Tổng quan */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  background-color: #ccceed; /* Cloud (light cream) */
-  color: #374375; /* Navy for text */
+  background-color: #FFFCF5; /* Cloud */
+  color: #374375; /* Navy */
 }
 
 /* Header */
 header {
-  background: #374375; /* Navy */
-  color: #FFFCF5; /* Cloud for text */
-  padding: 1rem 0;
+  background-color: #374375; /* Navy */
+  color: #FFFCF5; /* Cloud */
   text-align: center;
+  padding: 20px 0;
 }
 
 header h1 {
-  transition: color 0.3s ease;
+  font-size: 2.5rem;
+  margin: 0;
+  text-transform: uppercase;
 }
 
-header h1:hover {
-  color: #FFFCF5; /* Periwinkle on hover */
-}
-
-/* Navigation menu */
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 20px 0 0;
 }
 
 nav ul li {
@@ -43,160 +41,149 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #BABDE2; /* Periwinkle on hover */
+  color: #BABDE2; /* Periwinkle */
 }
 
-#about {
-  margin: 20px;
+/* Main content */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
   padding: 20px;
   border-radius: 10px;
-  background-color: #edf2fb; /* Màu xanh tím nhạt */
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  color: #2d4059; /* Màu xanh đậm cho chữ */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
-  transition: color 0.3s ease;
+/* Thành viên */
+#about {
+  background-color: #DFAEA1; /* Pastel Peach */
 }
 
-section h2:hover {
-  color: #a5c9ca; /* Màu xanh pastel lạnh nhạt hơn khi hover */
-}
-
-section p {
-  transition: color 0.3s ease;
-}
-
-section p:hover {
-  color: #7da1a6; /* Màu xanh nhạt hơn khi hover */
+#about h2 {
+  color: #895159; /* Dark Peach */
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
 
 .team {
-  background-color: #FFFCF5; /* Màu hồng cam nhạt pastel */
-  padding: 40px 0;
-  text-align: center;
-}
-
-.team h2 {
-  font-size: 2.5rem;
-  font-family: 'Georgia', serif;
-  color: #5c4033; /* Màu nâu đậm */
-  margin-bottom: 40px;
-}
-
-/* Container cho các thành viên */
-.team-members {
   display: flex;
   justify-content: center;
-  align-items: stretch;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
-  padding: 0 20px; /
 }
 
-/* Thẻ thành viên */
 .member {
-  background-color: #f0d3cc; /* Màu be nhạt pastel */
-  border-radius: 15px;
-  padding: 20px;
+  background-color: #BABDE2; /* Periwinkle */
+  padding: 15px;
+  border-radius: 10px;
   width: 200px;
   text-align: center;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.member h3 {
-  font-size: 1.6rem;
-  color: #5c2c2e; /* Màu nâu đậm */
-  margin-bottom: 10px;
+.member h4 {
+  color: #374375; /* Navy */
+  margin-bottom: 5px;
 }
 
-.member p {
-  font-size: 1rem;
-  color: #5c4033; /* Màu nâu nhạt */
-  margin: 0;
+.member h5 {
+  color: #895159; /* Dark Peach */
 }
 
-.member:hover {
-  transform: translateY(-10px); /* Hiệu ứng khi hover */
-}
-
-/* Hover hiệu ứng */
-.member:hover {
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Đổi hiệu ứng đổ bóng khi hover */
-}
-
-/* Style cho link trong tên thành viên */
 .member-link {
   text-decoration: none;
-  color: #5c2c2e; /* Màu nâu đậm */
+  color: #374375; /* Navy */
   transition: color 0.3s ease;
 }
 
 .member-link:hover {
-  color: #ff6f61; /* Màu cam đỏ khi hover */
+  color: #DFAEA1; /* Peach */
 }
 
-/* Services section */
+.member:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Bài tập */
 #services {
-  background-color: #FFFCF5; /* Cloud */
-  color: #374375; /* Navy */
+  background-color: #BABDE2; /* Periwinkle */
 }
 
-/* Contact section */
-#contact {
-  background-color: #FFFCF5; /* Cloud */
+#services h2 {
   color: #374375; /* Navy */
-}
-
-/* Footer */
-footer {
-  background: #374375; /* Navy */
-  color: #FFFCF5; /* Cloud */
   text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  font-size: 2rem;
 }
 
-footer p {
-  transition: color 0.3s ease;
-}
-
-footer p:hover {
-  color: #BABDE2; /* Periwinkle on hover */
-}
-
-/* Button styles */
-button {
-  background-color: #f5d0c6; /* Peach */
+#services ul {
+  list-style-type: square;
+  margin-left: 20px;
   color: #374375; /* Navy */
+}
+
+/* Form đăng kí */
+#contact {
+  background-color: #DFAEA1; /* Peach */
+}
+
+#contact h2 {
+  color: #895159; /* Dark Peach */
+  text-align: center;
+  font-size: 2rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #BABDE2; /* Periwinkle */
+  border-radius: 5px;
+  background-color: #FFFCF5; /* Cloud */
+  color: #374375; /* Navy */
+}
+
+form button {
+  background-color: #895159; /* Dark Peach */
+  color: #FFFCF5; /* Cloud */
   border: none;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #895159; /* Maroon on hover */
+form button:hover {
+  background-color: #374375; /* Navy */
+}
+
+/* Footer */
+footer {
+  background-color: #374375; /* Navy */
   color: #FFFCF5; /* Cloud */
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
 }
 
-/* Input fields */
-input[type="text"], input[type="email"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #FFFCF5; /* Cloud */
-  color: #374375; /* Navy */
+footer p {
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
 }
 
-input[type="text"]::placeholder,
-input[type="email"]::placeholder {
-  color: #895159; /* Maroon */
+footer p:hover {
+  color: #DFAEA1; /* Peach */
 }
