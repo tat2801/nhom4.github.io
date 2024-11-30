@@ -46,31 +46,6 @@ nav ul li a:hover {
   color: #BABDE2; /* Periwinkle on hover */
 }
 
-/* Section styles */
-section {
-  margin: 20px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: #FFFCF5; /* Periwinkle */
-  color: #374375; /* Navy for text */
-}
-
-section h2 {
-  transition: color 0.3s ease;
-}
-
-section h2:hover {
-  color: #895159; /* Maroon on hover */
-}
-
-section p {
-  transition: color 0.3s ease;
-}
-
-section p:hover {
-  color: #895159; /* Maroon on hover */
-}
-
 /* About section */
 #about {
   background-color: #FFFCF5; /* Cloud */
