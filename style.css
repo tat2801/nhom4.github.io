@@ -137,18 +137,60 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
   font-size: 2rem;
 }
 
-#services ul {
-  list-style-type: square;
-  margin-left: 20px;
+.product-gallery {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+  background-color: #FFFCF5; /* Cloud */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.product-container {
+  display: inline-flex;
+  gap: 20px;
+}
+
+.product {
+  background-color: #DFAEA1; /* Peach */
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
   color: #374375; /* Navy */
-  transition: color 0.3s ease;
 }
 
-#services ul li:hover {
-  color: #DFAEA1; /* Peach */
+.product p {
+  margin: 0;
+  color: #895159; /* Dark Peach */
+  font-weight: bold;
+}
+
+.product:hover {
   transform: scale(1.1);
+  background-color: #895159; /* Dark Peach */
+  color: #FFFCF5; /* Cloud */
 }
 
+.product:hover h3, .product:hover p {
+  color: #FFFCF5; /* Cloud */
+}
 /* Form đăng kí */
 #contact {
   background-color: rgba(223, 174, 161, 0.2); /* Peach nhạt */
