@@ -184,7 +184,6 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
 
 .product:hover {
   transform: scale(1.1);
-  background-color: rgba(186, 189, 226, 0.5); /* Dark Peach */
   color: #FFFCF5; /* Cloud */
 }
 
