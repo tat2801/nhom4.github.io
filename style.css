@@ -164,7 +164,8 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
 
 /* Bỏ hiệu ứng hover ở ảnh sản phẩm */
 .product img {
-  width: 200px;   /* Đặt chiều rộng ảnh */
+  width: 200px; 
+  height: 200px; /* Đặt chiều rộng ảnh */
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 10px;
