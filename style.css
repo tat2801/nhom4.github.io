@@ -113,7 +113,7 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
 }
 
 .member h4 {
-  color: #895159; /* Dark Peach */
+  color: #374375; /* Dark Peach */
 }
 
 .member-link {
@@ -123,7 +123,7 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
 }
 
 .member-link:hover {
-  color:  #FFFCF5; /* Orange-red */
+  color:   #895159; /* Orange-red */
 }
 
 /* Bài tập */
