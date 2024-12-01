@@ -137,6 +137,7 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
   font-size: 2rem;
 }
 
+/* Bỏ hiệu ứng hover cho sản phẩm */
 .product-gallery {
   overflow-x: auto;
   white-space: nowrap;
@@ -162,6 +163,7 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
   align-items: center;
 }
 
+/* Bỏ hiệu ứng hover ở ảnh sản phẩm */
 .product img {
   max-width: 100%;
   height: auto;
@@ -169,12 +171,14 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
   margin-bottom: 10px;
 }
 
+/* Bỏ hiệu ứng hover ở tên sản phẩm */
 .product h3 {
   margin: 10px 0 5px;
   font-size: 1.2rem;
   color: #374375; /* Navy */
 }
 
+/* Bỏ hiệu ứng hover ở mô tả sản phẩm */
 .product p {
   margin: 0;
   color: #895159; /* Dark Peach */
