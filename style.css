@@ -222,7 +222,12 @@ footer {
   color: #FFFCF5; /* Cloud */
   text-align: center;
   padding: 10px 0;
-  position: relative;
+  position: fixed;
+  bottom: 0; /* Đặt ở cuối màn hình */
+  left: 0; /* Căn trái */
+  width: 100%; /* Chiếm toàn bộ chiều ngang */
+  z-index: 100; /* Ưu tiên hiển thị cao hơn các phần tử khác */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Tạo bóng nhẹ để phân biệt */
 }
 
 footer p {
