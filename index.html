@@ -111,119 +111,121 @@
 
 <section id="baitap">
 <style>
-{
-  background-color: rgba(186, 189, 226, 0.22); /* Periwinkle nhạt */
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-}
  h2 {
   color: #374375; /* Navy */
   text-align: center;
   font-size: 2rem;
-        .container {
+   {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            background-color: #d6d8f1; /* Màu nền periwinkle nhạt */
+            padding: 20px;
             display: flex;
             align-items: flex-start;
             gap: 20px;
-            padding: 20px;
         }
 
-        .list-container {
-            display: flex;
-            flex-direction: row;
-            width: 40%;
-            gap: 20px;
+        iframe {
+            width: 60%;
+            height: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #ffffff; /* Màu nền iframe là trắng */
         }
 
-        .list-main, .list-sub {
-            width: 50%;
-        }
-
-        .list-main ul, .list-sub ul {
+        ul {
+            list-style-type: disc;
             padding: 0;
             margin: 0;
-            list-style: none;
+            width: 35%; /* Chiếm 35% chiều rộng */
+            display: flex;
+            flex-wrap: wrap; /* Cho phép các mục danh sách gập xuống dòng */
+            gap: 10px; /* Khoảng cách giữa các mục */
         }
 
-        .list-main li, .list-sub li {
-            background-color:rgba(186, 189, 226, 0.22);
+        li {
+            background-color: rgba(186, 189, 226, 0.22);
             color: #374375;
             padding: 8px;
             margin: 4px 0;
             border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
             cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            width: 48%; /* Chiếm 48% chiều rộng của cột */
         }
 
-        .list-main li:hover, .list-sub li:hover {
+        li:hover {
             background-color: rgba(186, 189, 226, 0.5);
             color: #21234b;
         }
 
-        .content {
-            width: 60%;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            background-color: #f9f9f9;
+        .list-sub {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
         }
-</style>
+
+        b {
+            font-weight: bold;
+        }
+    </style>
 	
 	<h2>Bài tập</h2>
-<div class="container">
-	<div class="list-container">
-		 <div class="list-main">
-    <ul>
-        <li><b>Bài 7</b>
+	<iframe id="contentFrame" src="" title="Content Frame"></iframe>
+     <ul>
+            <li><b>Bài 7</b>
+                <ul>
+                    <li onclick="loadContent('7lt1.html')">Luyện tập 1</li>
+                    <li onclick="loadContent('7lt2.html')">Luyện tập 2</li>
+                    <li onclick="loadContent('7vd1.html')">Vận dụng 1</li>
+                </ul>
+            </li>
+            <li><b>Bài 8</b>
+                <ul>
+                    <li onclick="loadContent('8lt1.html')">Luyện tập 1</li>
+                    <li onclick="loadContent('8lt2.html')">Luyện tập 2</li>
+                    <li onclick="loadContent('8vd1.html')">Vận dụng 1</li>
+                    <li onclick="loadContent('8vd2.html')">Vận dụng 2</li>
+                </ul>
+            </li>
+            <li><b>Bài 9</b>
+                <ul>
+                    <li onclick="loadContent('9lt.html')">Luyện tập</li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="list-sub">
             <ul>
-                <li onclick="loadContent('7lt1.html')">Luyện tập 1</li>
-                <li onclick="loadContent('7lt2.html')">Luyện tập 2</li>
-		<li onclick="loadContent('7vd1.html')">Vận dụng 1</li>
+                <li><b>Bài 10</b>
+                    <ul>
+                        <li onclick="loadContent('10lt1.html')">Luyện tập 1</li>
+                        <li onclick="loadContent('10lt2.html')">Luyện tập 2</li>
+                        <li onclick="loadContent('10vd1.html')">Vận dụng</li>
+                    </ul>
+                </li>
+                <li><b>Bài 11</b>
+                    <ul>
+                        <li onclick="loadContent('11lt1.html')">Luyện tập 1</li>
+                        <li onclick="loadContent('11lt2.html')">Luyện tập 2</li>
+                        <li onclick="loadContent('11vd.html')">Vận dụng</li>
+                    </ul>
+                </li>
+                <li><b>Bài 12</b>
+                    <ul>
+                        <li onclick="loadContent('12lt.html')">Luyện tập</li>
+                        <li onclick="loadContent('12vd1.html')">Vận dụng 1</li>
+                        <li onclick="loadContent('12vd2.html')">Vận dụng 2</li>
+                    </ul>
+                </li>
             </ul>
-        </li>
-	 <li><b>Bài 8</b>
-            <ul>
-                <li onclick="loadContent('8lt1.html')">Luyện tập 1</li>
-                <li onclick="loadContent('8lt2.html')">Luyện tập 2</li>
-		<li onclick="loadContent('8vd1.html')">Vận dụng 1</li>
-		<li onclick="loadContent('8vd2.html')">Vận dụng 2</li>
-            </ul>
-	</li>
-	 <li><b>Bài 9</b>
-            <ul>
-                <li onclick="loadContent('9lt.html')">Luyện tập</li>
-            </ul>
-	</li>
-	      </div>
-	      <div class="list-sub">
-	 <li><b>Bài 10</b>
-            <ul>
-                <li onclick="loadContent('10lt1.html')">Luyện tập 1</li>
-                <li onclick="loadContent('10lt2.html')">Luyện tập 2</li>
-		<li onclick="loadContent('10vd1.html')">Vận dụng</li>
-	    </ul>
-	</li>
-	 <li><b>Bài 11</b>
-            <ul>
-                <li onclick="loadContent('11lt1.html')">Luyện tập 1</li>
-                <li onclick="loadContent('11lt2.html')">Luyện tập 2</li>
-		<li onclick="loadContent('11vd.html')">Vận dụng</li>
-            </ul>
-	</li>
-	 <li><b>Bài 12</b>
-            <ul>
-                <li onclick="loadContent('12lt.html')">Luyện tập</li>
-		<li onclick="loadContent('12vd1.html')">Vận dụng 1</li>
-		<li onclick="loadContent('12vd2.html')">Vận dụng 2</li>
-            </ul>
-        </li>
-		</div></div>
-		 <div id="contentDisplay" class="content"></div>
-		
-    </ul>
- <iframe id="contentFrame" src="" title="Content Frame"></iframe>
-</div>
-</section>
+        </div>
+    </section>
 
     <script>
         function loadContent(html) {
