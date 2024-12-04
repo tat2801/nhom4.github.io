@@ -121,7 +121,7 @@
   color: #374375; /* Navy */
   text-align: center;
   font-size: 2rem;
-       body {
+       {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -152,7 +152,7 @@
         }
 
         .list-main li, .list-sub li {
-            background-color: rgba(186, 189, 226, 0.22);
+            background-color:rgba(186, 189, 226, 0.22);
             color: #374375;
             padding: 8px;
             margin: 4px 0;
@@ -177,6 +177,8 @@
 	
 	<h2>Bài tập</h2>
 <div class="container">
+	<div class="list-container">
+		 <div class="list-main">
     <ul>
         <li><b>Bài 7</b>
             <ul>
@@ -198,6 +200,8 @@
                 <li onclick="loadContent('9lt.html')">Luyện tập</li>
             </ul>
 	</li>
+	      </div>
+	      <div class="list-sub">
 	 <li><b>Bài 10</b>
             <ul>
                 <li onclick="loadContent('10lt1.html')">Luyện tập 1</li>
@@ -219,6 +223,9 @@
 		<li onclick="loadContent('12vd2.html')">Vận dụng 2</li>
             </ul>
         </li>
+		</div></div>
+		 <div id="contentDisplay" class="content"></div>
+		
     </ul>
  <iframe id="contentFrame" src="" title="Content Frame"></iframe>
 </div>
