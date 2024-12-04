@@ -113,45 +113,65 @@
 <style>
 {
   background-color: rgba(186, 189, 226, 0.22); /* Periwinkle nhạt */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
 }
  h2 {
   color: #374375; /* Navy */
   text-align: center;
   font-size: 2rem;
-}
-	.container {
+       body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
             display: flex;
-            align-items: flex-start; /* Căn hàng đầu trên cùng */
-            gap: 100px; /* Khoảng cách giữa danh sách và iframe */
+            align-items: flex-start;
+            gap: 20px;
             padding: 20px;
         }
 
-        iframe {
-            width: 60%; /* Chiếm 60% chiều rộng */
-            height: 400px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
+        .list-container {
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+            gap: 20px;
         }
 
-	 ul {
-            list-style-type: disc;
+        .list-main, .list-sub {
+            width: 50%;
         }
 
-         ul ul {
-            list-style-type: circle;
-            margin-left: 20px;
+        .list-main ul, .list-sub ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
         }
 
-         li {
+        .list-main li, .list-sub li {
+            background-color: rgba(186, 189, 226, 0.22);
             color: #374375;
             padding: 8px;
             margin: 4px 0;
             border-radius: 5px;
-            transition: color 0.3s;
+            transition: background-color 0.3s, color 0.3s;
+            cursor: pointer;
         }
-	
-        nav ul li:hover {
-            color:  #895159;
+
+        .list-main li:hover, .list-sub li:hover {
+            background-color: rgba(186, 189, 226, 0.5);
+            color: #21234b;
+        }
+
+        .content {
+            width: 60%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
         }
 </style>
 	
