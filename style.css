@@ -260,11 +260,11 @@ form button:hover {
   text-align: center;
   font-size: 2rem;
 }
-	 ul {
+	nav ul {
             list-style-type: disc;
         }
 
-        ul ul {
+        nav ul ul {
             list-style-type: circle;
             margin-left: 20px;
         }
