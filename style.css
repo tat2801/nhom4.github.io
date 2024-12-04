@@ -269,7 +269,7 @@ form button:hover {
             margin-left: 20px;
         }
 
-        li {
+        nav li {
             color: #374375;
             padding: 8px;
             margin: 4px 0;
@@ -277,7 +277,7 @@ form button:hover {
             transition: color 0.3s;
         }
 	
-        li:hover {
+        nav li:hover {
             color: #21234b;
             cursor: pointer;
         }
