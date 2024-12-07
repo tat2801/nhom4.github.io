@@ -62,7 +62,7 @@
 
         /* Câu trả lời */
         section#answers {
-            background-color: rgba(186, 189, 226, 0.22); /* Periwinkle nhạt */
+            background-color: #edeef7; /* Periwinkle nhạt */
             padding: 20px;
             margin-bottom: 20px;
             border-radius: 10px;
