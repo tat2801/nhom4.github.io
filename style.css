@@ -151,13 +151,18 @@ section:hover
   background-color: #FFFCF5; /* Cloud */
   border: 1px solid #ccc;
   border-radius: 10px;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  box-sizing: border-box;
+  display: flex;            /* Hiển thị các sản phẩm theo hàng ngang */
+  gap: 10px;                /* Khoảng cách giữa các sản phẩm */
+  width: 100%;              /* Chiếm hết chiều rộng của section */
 }
 
 .product-container {
-  display: inline-flex;
   gap: 20px;
+  display: flex;
 }
-
+  
 .product {
   background-color: rgba(186, 189, 226, 0.1); /* Peach */
   border-radius: 10px;
@@ -167,6 +172,7 @@ section:hover
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-shrink: 0;
 }
 
 /* Bỏ hiệu ứng hover ở ảnh sản phẩm */
@@ -258,6 +264,7 @@ form button:hover {
   background-color: #374375; /* Navy */
   transform: translateY(-3px);
 }
+
 
 /* Footer */
 footer {
