@@ -1,269 +1,288 @@
+/* Tổng quan */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #FFFCF5; /* Cloud */
+  color: #374375; /* Navy */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nhóm 4</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <h1><b>WELCOME TO GROUP_4'S WEBSITE!</b></h1>
-    <nav>
-      <ul>
-        <li><a href="#about">Thành viên</a></li>
-        <li><a href="#services">Hoạt động</a></li>
-        <li><a href="#contact">Đăng kí</a></li>
-	<li><a href="#baitap">Bài tập</a></li>
-      </ul>
-    </nav>
-  </header>
+/* Header */
+header {
+  background-color: #374375; /* Navy */
+  color: #FFFCF5; /* Cloud */
+  text-align: center;
+  padding: 20px 0;
+}
 
-<main>
-<section id="about">
-   <h2>Thành viên</h2><br>
-<section id="team" class="team">
-    <div class="member">
-      <h3><a href="anhthu.html" class="member-link">Trần Anh Thư</a></h3>
-      <h4>Thành viên nhóm</h4>
-    </div>
-    <div class="member">
-      <h3><a href="quetran.html" class="member-link">Nguyễn Thị Quế Trân</a></h3>
-      <h4>Thành viên nhóm</h4>
-    </div>
-    <div class="member">
-      <h3><a href="phuongvi.html" class="member-link">Võ Thị Phương Vi</a></h3>
-      <h4>Thành viên nhóm</h4>
-    </div>
-</section>
-</section>
-	  
-    <section id="services">
-      <h2>Hoạt động</h2>
-     <section class="product-gallery">
-    <div class="product-container">
-      <div class="product">
-	<h3>29.9+</h3>
-        <img src="hoa.jpg" alt="29.9+">
-      </div>
-      <div class="product">
-	<h3>aespavn</h3>
-        <img src="aespa.jpg" alt=aespavn">
-      </div>
-      <div class="product">
-	<h3>Đi nghĩa vụ 1</h3>
-        <img src="dchi.jpg" alt="Đi nghĩa vụ 1 ">
-      </div>
-      <div class="product">
-	<h3>Đi nghĩa vụ 2</h3>
-        <img src="btram.jpg" alt="Đi nghĩa vụ 2">
-      </div>
-      <div class="product">
-	<h3>🎃🎊</h3>
-        <img src="banh.jpg" alt="Product 5">
-      </div>
-      <div class="product">
-	<h3>Mỹ vị nhân gian</h3>
-        <img src="an.jpg" alt="Product 6">
-      </div>
-      <div class="product">
-	<h3>Ảnh 🔥</h3>
-        <img src="nhau.jpg" alt="Product 6">
-      </div>
-    </div>
- <script src="scroll.js"></script>
-  </section>
-    </section>
-	
-    <section id="contact">
-      <h2>Đơn đăng kí gia nhập nhóm</h2>
-      <form id="contactForm">
-        <label for="name">Họ và tên:</label>
-        <input type="text" id="name" name="name" required>
-        <label for="job"> Bạn là: </label>
-		<select ìd="job" name="job">
-			<option value="giaovien"> Giáo viên </option>
-			<option value="hocsinh"> Học sinh </option>
-		</select>	
-	      <br>
-	<label>Giới tính:</label>
-<div class="radio-group">
-  <input type="radio" id="gioitinh1" name="gioitinh" value="nam">
-  <label for="gioitinh1">Nam</label>
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+header h1:hover {
+  color:  #FFFCF5; /* Peach */
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #FFFCF5; /* Cloud */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #BABDE2; /* Periwinkle */
+}
+
+/* Main content */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(223, 174, 161, 0.2); /* Nhạt màu Periwinkle */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+section:hover 
+  {transform: translateY(-5px);
+ /* Đậm hơn chút khi hover */
+}
+
+/* Thành viên */
+#about {
+  background-color: #f8efec; /* Peach */
+  padding: 20px;
+}
+
+#about h2 {
+  color: #895159; /* Dark Peach */
+  font-size: 2rem;
+  margin-bottom: -50px; /* Giảm khoảng cách giữa h2 và các thẻ member */
+}
+
+/* Căn chỉnh thành viên thành 3 cột */
+.team {
+  background-color: #f8efec;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột có chiều rộng bằng nhau */
+  gap: 50px; /* Khoảng cách giữa các thẻ thành viên */
+  margin-top: 0; /* Đảm bảo không có khoảng cách trên phần tử team */
+  /* Không có hiệu ứng hover cho .team */
+}
+
+.member {
+  background-color: #edc2b7; /* Peach nhạt */
+  padding: 10px 20px; /* Giảm padding dọc, tăng padding ngang */
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 220px; /* Tăng chiều ngang */
+  height: auto; /* Chiều cao tự động để phù hợp với nội dung */
+}
+
+/* Thêm hiệu ứng hover cho từng thẻ member */
+.member:hover {
+  transform: translateY(-10px);
+  background-color: #f0cbc2; /* Thay đổi màu nền khi hover */
+}
+
+.member h3 {
+  color: #374375; /* Navy */
+  text-align: center;
+  margin-bottom: 3px;
+  transition: color 0.3s ease;
+}
+
+.member h3:hover {
+  color: #FFFCF5; /* Cloud */
+}
+
+.member h4 {
+  color: #374375; /* Dark Peach */
+}
+
+.member-link {
+  text-decoration: none;
+  color: rgb(58, 2, 0); /* Navy */
+  transition: color 0.3s ease;
+}
+
+.member-link:hover {
+  color: #895159; /* Orange-red */
+}
+
+
+/* Bài tập */
+#services {
+  background-color: rgba(186, 189, 226, 0.22); /* Periwinkle nhạt */
+}
+
+#services h2 {
+  color: #374375; /* Navy */
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Bỏ hiệu ứng hover cho sản phẩm */
+.product-gallery {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px;
+  background-color: #FFFCF5; /* Cloud */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  scroll-behavior: smooth; /* Smooth scrolling */
+  box-sizing: border-box;
+  display: flex;            /* Hiển thị các sản phẩm theo hàng ngang */
+  gap: 10px;                /* Khoảng cách giữa các sản phẩm */
+  width: 100%;              /* Chiếm hết chiều rộng của section */
+}
+
+.product-container {
+  gap: 20px;
+  display: flex;
+}
   
-  <input type="radio" id="gioitinh2" name="gioitinh" value="nu">
-  <label for="gioitinh2">Nữ</label>
-  
-  <input type="radio" id="gioitinh3" name="gioitinh" value="iykyk">
-  <label for="gioitinh3">IYKYK</label>
-</div>
-	      <br>
-	<label for="ngaysinh"> Ngày sinh: </label>
-		<input type="date" id="ngaysinh">
-	      <br>
-        <label for="lido">Lí do bạn muốn gia nhập nhóm:</label>
-        <input type="text" id="lido" name="lido" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Gửi</button>
-      </form>
-    </section>
-  </main>
+.product {
+  background-color: rgba(186, 189, 226, 0.1); /* Peach */
+  border-radius: 10px;
+  padding: 10px;
+  min-width: 200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+}
 
-<style>
-     h2 {
-      color: #374375; /* Navy */
-      text-align: center;
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+/* Bỏ hiệu ứng hover ở ảnh sản phẩm */
+.product img {
+  width: 200px; 
+  height: 200px; /* Đặt chiều rộng ảnh */
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
 
-    section {
-      background-color: #edeef7; /* Màu nền periwinkle nhạt */
-      padding: 20px;
-      display: flex;
-      flex-direction: column; /* Đặt tiêu đề và nội dung theo cột */
-      align-items: center; /* Căn giữa nội dung theo chiều ngang */
-      gap: 20px; /* Khoảng cách giữa tiêu đề và nội dung */
-    }
+/* Bỏ hiệu ứng hover ở tên sản phẩm */
+.product h3 {
+  margin: 10px 0 5px;
+  font-size: 1.2rem;
+  color: #374375; /* Navy */
+}
 
-    .content {
-      display: flex;
-      justify-content: center; /* Căn giữa toàn bộ nội dung */
-      gap: 20px; /* Khoảng cách giữa các cột */
-      width: 100%;
-    }
+/* Bỏ hiệu ứng hover ở mô tả sản phẩm */
+.product p {
+  margin: 0;
+  color: #895159; /* Dark Peach */
+  font-weight: bold;
+}
 
-    .column {
-      width: 15%; /* Giảm độ rộng của hai cột đầu tiên */
-    }
+/* Form đăng kí */
+#contact {
+  background-color: rgba(223, 174, 161, 0.2); /* Peach nhạt */
+}
 
-    .column:last-child {
-      width: 70%; /* Tăng độ rộng của iframe */
-    }
+#contact h2 {
+  color: #895159; /* Dark Peach */
+  text-align: center;
+  font-size: 2rem;
+}
 
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      background-color: #ffffff; /* Màu nền iframe là trắng */
-    }
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
 
-    ul {
-      list-style-type: none; /* Loại bỏ dấu chấm đầu dòng */
-      padding: 0;
-      margin: 0;
-      background-color: transparent !important; /* Bỏ màu nền của ul */
-    }
+form .radio-group {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Khoảng cách giữa các lựa chọn */
+  margin-bottom: 15px;
+}
 
-    /* Loại bỏ màu nền của các li chính */
-    ul > li {
-      background-color: transparent; /* Không màu nền */
-    }
+.radio-group input[type="radio"] {
+  margin: 0; /* Xóa khoảng cách mặc định của ô radio */
+  transform: scale(1.2); /* Tăng kích thước radio nếu cần */
+}
 
-    /* Màu nền cho các mục li con */
-    ul ul li {
-      background-color: rgba(186, 189, 226, 0.22); /* Màu nền nhẹ */
-      color: #374375;
-      padding: 8px;
-      margin: 4px 0;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
-    }
+.radio-group label {
+  display: inline-block;
+  margin: 0;
+  font-weight: normal;
+  color: #374375; /* Navy */
+}
 
-    /* Hiệu ứng hover cho mục li con */
-    ul ul li:hover {
-      background-color: rgba(186, 189, 226, 0.5);
-      color: #21234b;
-    }
+form input, form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(186, 189, 226, 0.5); /* Periwinkle nhạt hơn */
+  border-radius: 5px;
+  background-color: rgba(255, 252, 245, 0.8); /* Cloud nhạt */
+  color: #374375; /* Navy */
+  transition: transform 0.3s ease;
+}
 
-    ul ul {
-      padding-left: 20px; /* Khoảng cách giữa danh sách chính và phụ */
-    }
+form input:hover, form select:hover {
+  transform: translateY(-3px);
+}
 
-    b {
-      font-weight: bold;
-    }
-  </style>
-	
-  <section>
-    <h2>Bài tập</h2>
-    <div class="content">
-      <!-- Cột đầu tiên -->
-      <div class="column">
-        <ul>
-          <li><b>Bài 7</b>
-            <ul>
-              <li onclick="loadContent('7lt1.html')">Luyện tập 1</li>
-              <li onclick="loadContent('7lt2.html')">Luyện tập 2</li>
-              <li onclick="loadContent('7vd1.html')">Vận dụng 1</li>
-            </ul>
-          </li>
-          <li><b>Bài 8</b>
-            <ul>
-              <li onclick="loadContent('8lt1.html')">Luyện tập 1</li>
-              <li onclick="loadContent('8lt2.html')">Luyện tập 2</li>
-              <li onclick="loadContent('8vd1.html')">Vận dụng 1</li>
-              <li onclick="loadContent('8vd2.html')">Vận dụng 2</li>
-            </ul>
-          </li>
-          <li><b>Bài 9</b>
-            <ul>
-              <li onclick="loadContent('9lt.html')">Luyện tập</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+form button {
+  background-color: #895159; /* Dark Peach */
+  color: #FFFCF5; /* Cloud */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
-      <!-- Cột thứ hai -->
-      <div class="column">
-        <ul>
-          <li><b>Bài 10</b>
-            <ul>
-              <li onclick="loadContent('10lt1.html')">Luyện tập 1</li>
-              <li onclick="loadContent('10lt2.html')">Luyện tập 2</li>
-              <li onclick="loadContent('10vd1.html')">Vận dụng</li>
-            </ul>
-          </li>
-          <li><b>Bài 11</b>
-            <ul>
-              <li onclick="loadContent('11lt1.html')">Luyện tập 1</li>
-              <li onclick="loadContent('11lt2.html')">Luyện tập 2</li>
-              <li onclick="loadContent('11vd.html')">Vận dụng</li>
-            </ul>
-          </li>
-          <li><b>Bài 12</b>
-            <ul>
-              <li onclick="loadContent('12lt.html')">Luyện tập</li>
-              <li onclick="loadContent('12vd1.html')">Vận dụng 1</li>
-              <li onclick="loadContent('12vd2.html')">Vận dụng 2</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
+form button:hover {
+  background-color: #374375; /* Navy */
+  transform: translateY(-3px);
+}
 
-      <!-- Cột thứ ba (iframe) -->
-      <div class="column">
-        <iframe id="contentFrame" src="" title="Content Frame"></iframe>
-      </div>
-    </div>
-  </section>
 
-  <script>
-    function loadContent(html) {
-      const iframe = document.getElementById('contentFrame');
-      iframe.src = html;
-    }
-  </script>
-	
-  <footer>
-    <p><b>✨ THIS WEBSITE BELONGS TO GROUP_4 ✨</b></p>
-  </footer>
+/* Footer */
+footer {
+  background-color: #374375; /* Navy */
+  color: #FFFCF5; /* Cloud */
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0; /* Đặt ở cuối màn hình */
+  left: 0; /* Căn trái */
+  width: 100%; /* Chiếm toàn bộ chiều ngang */
+  z-index: 100; /* Ưu tiên hiển thị cao hơn các phần tử khác */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Tạo bóng nhẹ để phân biệt */
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
-
+footer p {
+  margin: 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: color 0.3s ease;
+}
