@@ -209,6 +209,16 @@ section:hover
   font-size: 2rem;
 }
 
+/* Căn chỉnh form */
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align form elements to the left */
+  width: 100%; /* Làm cho form chiếm toàn bộ chiều rộng section */
+  max-width: 600px; /* Giới hạn độ rộng form */
+  margin: 0; /* Remove auto centering */
+}
+
 form label {
   display: block;
   margin-bottom: 5px;
