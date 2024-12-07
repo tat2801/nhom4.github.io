@@ -70,34 +70,40 @@ section:hover
 
 /* Thành viên */
 #about {
-background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
+  background-color: #f8efec; /* Peach */
+  padding: 20px;
 }
 
 #about h2 {
   color: #895159; /* Dark Peach */
   font-size: 2rem;
-  margin-bottom: 10px;
+  margin-bottom: -50px; /* Giảm khoảng cách giữa h2 và các thẻ member */
 }
 
+/* Căn chỉnh thành viên thành 3 cột */
 .team {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  flex-wrap: wrap;
+  background-color: #f8efec;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tạo 3 cột có chiều rộng bằng nhau */
+  gap: 50px; /* Khoảng cách giữa các thẻ thành viên */
+  margin-top: 0; /* Đảm bảo không có khoảng cách trên phần tử team */
+  /* Không có hiệu ứng hover cho .team */
 }
 
 .member {
   background-color: #edc2b7; /* Peach nhạt */
-  padding: 15px;
+  padding: 10px 20px; /* Giảm padding dọc, tăng padding ngang */
   border-radius: 10px;
-  width: 250px;
   text-align: center;
   transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 220px; /* Tăng chiều ngang */
+  height: auto; /* Chiều cao tự động để phù hợp với nội dung */
 }
 
+/* Thêm hiệu ứng hover cho từng thẻ member */
 .member:hover {
   transform: translateY(-10px);
-  background-color: #edc2b7; /* Peach nhạt */
+  background-color: #f0cbc2; /* Thay đổi màu nền khi hover */
 }
 
 .member h3 {
@@ -122,8 +128,9 @@ background-color: rgba(223, 174, 161, 0);/* Nhạt màu Periwinkle */
 }
 
 .member-link:hover {
-  color:   #895159; /* Orange-red */
+  color: #895159; /* Orange-red */
 }
+
 
 /* Bài tập */
 #services {
@@ -272,4 +279,3 @@ footer p {
   letter-spacing: 1px;
   transition: color 0.3s ease;
 }
-
