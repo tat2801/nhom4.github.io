@@ -30,6 +30,50 @@
         a:hover {
             color: #515f99; /* Màu xanh đậm khi hover */
         }
+    iframe {
+            width: 100%;
+            height: 500px;
+            border: 2px solid #374375; /* Navy */
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    .audio-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        audio {
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: #ffccbc; /* Màu peach cho thanh audio */
+            border-radius: 10px;
+            height: 40px;
+            transition: background-color 0.3s ease;
+        }
+
+        audio:hover {
+            background-color: #ffb69e; /* Màu peach đậm hơn khi hover */
+        }
+
+        .audio-container button {
+            background-color: #6a5acd; /* Màu periwinkle cho nút play */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .audio-container button:hover {
+            background-color: #5a4db2; /* Màu periwinkle đậm hơn khi hover */
+        }
 </style>
     <!-- Câu trả lời -->
     <section id="answers">
@@ -40,17 +84,19 @@
 <img src="slay.jpg" alt="Hình ảnh minh họa" width="500" height="300">
 
 
-<audio controls>
-
-  <source src="link_den_bai_hat_quoc_ca.mp3" type="audio/mpeg">
-
-  Trình duyệt của bạn không hỗ trợ phát audio.
-
-</audio>
+<div class="audio-container">
+        <p>Bài hát đại diện cho nhóm</p>
+        <audio controls>
+            <source src="slay.mp3" type="audio/mp3">
+            Trình duyệt của bạn không hỗ trợ phần tử audio.
+        </audio>
+        <button>Play Music</button>
+    </div>
+<p><b>Hãy đăng kí để trở thành thành viên của Slay!</b></p>
 
 <!-- Thêm liên kết "Đăng kí" -->
 
-<p><a href="link_den_trang_web.html" target="iframecontent">Đăng ký</a></p>
+<p><a href="12vd1.html" target="iframecontent">Đăng ký</a></p>
 <iframe name="iframecontent" frameborder="0"></iframe>
     </section>
 </main>
