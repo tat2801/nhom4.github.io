@@ -25,15 +25,7 @@
             margin-top: 20px; /* Thêm khoảng cách giữa iframe và các phần tử trên */
         }
 
-        .audio-container {
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            margin-top: 20px;
-        }
-
+        /* Sửa CSS cho audio trực tiếp mà không cần div */
         audio {
             width: 80%;
             border: none;
@@ -43,6 +35,8 @@
             height: 40px;
             transition: background-color 0.3s ease;
             margin-bottom: 10px;
+            display: block; /* Đảm bảo audio chiếm không gian đầy đủ */
+            margin: 0 auto; /* Canh giữa audio */
         }
 
         audio:hover {
@@ -120,13 +114,12 @@
             <img src="slay.jpg" alt="Hình ảnh minh họa" width="200" height="200">
         </div>
 
-<h3>Bài hát đại diện cho nhóm</h3>
-        <div class="audio-container">
-            <audio controls>
-                <source src="slay.mp3" type="audio/mp3">
-                Trình duyệt của bạn không hỗ trợ phần tử audio.
-            </audio>
-        </div>
+        <h3>Bài hát đại diện cho nhóm</h3>
+        <!-- Không còn div bao quanh audio -->
+        <audio controls>
+            <source src="slay.mp3" type="audio/mp3">
+            Trình duyệt của bạn không hỗ trợ phần tử audio.
+        </audio>
 
         <h3>Hãy đăng kí để trở thành thành viên của Slay!</h3>
 
