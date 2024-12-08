@@ -83,6 +83,7 @@ section:hover
 /* Căn chỉnh thành viên thành 3 cột */
 .team {
   background-color: #f8efec;
+  grid-template-columns: repeat(3, 1fr); 
   display: grid;
   gap: 50px; /* Khoảng cách giữa các thẻ thành viên */
   margin-top: 0; /* Đảm bảo không có khoảng cách trên phần tử team */
