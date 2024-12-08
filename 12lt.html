@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -36,7 +37,7 @@
 
         h3 {
             text-align: center;
-            color: #6a5acd; /* Màu periwinkle cho tiêu đề */
+            color: #895159; /* Màu periwinkle cho tiêu đề */
         }
 
         form {
@@ -47,7 +48,7 @@
         label {
             font-size: 1.1rem;
             margin-bottom: 5px;
-            color: #6a5acd; /* Màu periwinkle cho nhãn */
+            color: #374375; /* Màu periwinkle cho nhãn */
         }
 
         input, select, textarea {
@@ -69,7 +70,7 @@
             resize: vertical;
         }
 
-       button {
+    form button {
   background-color: #895159; /* Dark Peach */
   color: #FFFCF5; /* Cloud */
   border: none;
@@ -80,29 +81,29 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
+form button:hover {
   background-color: #374375; /* Navy */
   transform: translateY(-3px);
 }
     </style>
         
  <div class="container">
-        <h3>Đăng ký tài khoản</h3>
+        <h3>ĐĂNG KÍ TÀI KHOẢN</h3>
         <form action="/register" method="post">
             <!-- Tên người dùng -->
-            <label for="username">Tên người dùng:</label>
+            <label for="username"><b>Tên người dùng:</b></label>
             <input type="text" id="username" name="username" required>
 
             <!-- Email -->
-            <label for="email">Email:</label>
+            <label for="email"><b>Email:</b></label>
             <input type="email" id="email" name="email" required>
 
             <!-- Ngày sinh -->
-            <label for="birthdate">Ngày sinh:</label>
+            <label for="birthdate"><b>Ngày sinh:</b></label>
             <input type="date" id="birthdate" name="birthdate" required>
 
             <!-- Quốc gia -->
-            <label for="country">Quốc gia:</label>
+            <label for="country"></b>Quốc gia:</b></label>
             <select id="country" name="country" required>
                 <option value="vietnam">Việt Nam</option>
                 <option value="usa">United States</option>
@@ -111,11 +112,11 @@ button:hover {
             </select>
 
             <!-- Phản hồi -->
-            <label for="feedback">Phản hồi:</label>
+            <label for="feedback"></b>Phản hồi:</b></label>
             <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
 
             <!-- Nút gửi -->
-            <button type="submit">Đăng ký</button>
+            <button type="submit"></b>Đăng ký</b></button>
         </form>
     </div>
     </section>
