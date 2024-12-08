@@ -253,6 +253,7 @@ form input, form select {
   background-color: rgba(255, 252, 245, 0.8); /* Cloud nhạt */
   color: #374375; /* Navy */
   transition: transform 0.3s ease;
+  box-sizing: border-box;
 }
 
 form input:hover, form select:hover {
