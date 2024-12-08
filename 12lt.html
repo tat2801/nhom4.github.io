@@ -85,59 +85,39 @@
         }
     </style>
         
- <h3>Lịch hoạt động công tác CLB</h3>
+ <div class="container">
+        <h1>Đăng ký tài khoản</h1>
+        <form action="/register" method="post">
+            <!-- Tên người dùng -->
+            <label for="username">Tên người dùng:</label>
+            <input type="text" id="username" name="username" required>
 
-    <table>
+            <!-- Email -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <tr>
+            <!-- Ngày sinh -->
+            <label for="birthdate">Ngày sinh:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
 
-            <th>Tên câu lạc bộ</th>
+            <!-- Quốc gia -->
+            <label for="country">Quốc gia:</label>
+            <select id="country" name="country" required>
+                <option value="vietnam">Việt Nam</option>
+                <option value="usa">United States</option>
+                <option value="uk">United Kingdom</option>
+                <!-- Các quốc gia khác có thể được thêm vào đây -->
+            </select>
 
-            <th>Lịch hoạt động</th>
+            <!-- Phản hồi -->
+            <label for="feedback">Phản hồi:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
 
-        </tr>
-
-        <tr>
-
-            <td><a href="#club1"><strong>Câu lạc bộ Nấu xói</strong></a></td>
-
-            <td>Thứ Hai, Thứ Tư, Thứ Sáu - 18:00 đến 20:00</td>
-
-        </tr>
-
-        <tr>
-
-            <td><a href="#club2"><strong>Câu lạc bộ Slay</strong></a></td>
-
-            <td>Thứ Ba, Thứ Năm - 16:00 đến 18:00</td>
-
-        </tr>
-        
-    </table>
-
-    <h2 id="club1">Câu lạc bộ Nấu xói</h2>
-
-    <p>Địa điểm: Phòng 12 Toán</p>
-
-    <p>Thành viên: 12</p>
-
-    <p>Thành tích: Nấu xói con thỏ</p>
-
-    <p>Phí hội viên: 100$/tháng</p>
-
-    <p>Điện thoại liên hệ: 0836 345 778</p>
-
-    <h2 id="club2">Câu lạc bộ Slay</h2>
-
-    <p>Địa điểm: Phòng 303</p>
-
-    <p>Thành viên: 9</p>
-
-    <p>Thành tích: Slay đêm Halloween</p>
-
-    <p>Phí hội viên: 1000$/tháng</p>
-
-    <p>Điện thoại liên hệ: 0836 345 778</p>
+            <!-- Nút gửi -->
+            <button type="submit">Đăng ký</button>
+        </form>
+    </div>
+    </section>
 </main>
 </body>
 </html>
