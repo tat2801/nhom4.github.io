@@ -1,29 +1,58 @@
+
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trang web nghệ thuật</title>
-<style>
-  /* CSS để định dạng iframe */
-  iframe {
-    width: 100%;
-    height: 500px;
-    border: 1px solid #ccc;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 12/ Vận dụng 2</title>
+  <link rel="stylesheet" href="baitap.css">
 </head>
 <body>
-<h1>Nghệ thuật</h1>
-<!-- Chèn ảnh minh họa -->
-<img src="link_den_anh_minh_hoa.jpg" alt="Hình ảnh minh họa" width="500" height="300">
-<!-- Chèn bài hát Quốc ca -->
+
+<header>
+    <h1>Bài 12/ Vận dụng 2</h1>
+</header>
+
+<main>
+    <!-- Câu hỏi -->
+    <section id="questions">
+        <h2>Câu hỏi</h2>
+        <p><strong>Sửa lại mã nguồn của trang web đã viết trong Nhiệm vụ 2, Bài 11 để thêm một liên kết cho cụm từ Đăng kí. 
+          Khi nháy chuột vào liên kết, trang web đã viết ở câu 1 sẽ được hiển thị trong iframe</strong></p>
+    </section>
+<style>
+    a {
+            color: #374375; /* Màu xanh cho đường link */
+            text-decoration: none; /* Xóa gạch dưới của link */
+        }
+
+        /* Hiệu ứng hover cho đường link */
+        a:hover {
+            color: #515f99; /* Màu xanh đậm khi hover */
+        }
+</style>
+    <!-- Câu trả lời -->
+    <section id="answers">
+        <h2>Câu trả lời</h2>
+<h3>Câu lạc bộ Slay</h3>
+
+
+<img src="slay.jpg" alt="Hình ảnh minh họa" width="500" height="300">
+
+
 <audio controls>
+
   <source src="link_den_bai_hat_quoc_ca.mp3" type="audio/mpeg">
+
   Trình duyệt của bạn không hỗ trợ phát audio.
+
 </audio>
+
 <!-- Thêm liên kết "Đăng kí" -->
-<p><a href="link_den_trang_web.html" target="iframe_content">Đăng ký</a></p>
-<iframe name="iframe_content" frameborder="0"></iframe>
+
+<p><a href="link_den_trang_web.html" target="iframecontent">Đăng ký</a></p>
+<iframe name="iframecontent" frameborder="0"></iframe>
+    </section>
+</main>
 </body>
 </html>
