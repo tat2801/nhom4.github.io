@@ -1,27 +1,12 @@
-
 <!DOCTYPE html>
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bài 12/ Vận dụng 2</title>
-  <link rel="stylesheet" href="baitap.css">
-</head>
-<body>
-
-<header>
-    <h1>Bài 12/ Vận dụng 2</h1>
-</header>
-
-<main>
-    <!-- Câu hỏi -->
-    <section id="questions">
-        <h2>Câu hỏi</h2>
-        <p><strong>Sửa lại mã nguồn của trang web đã viết trong Nhiệm vụ 2, Bài 11 để thêm một liên kết cho cụm từ Đăng kí. 
-          Khi nháy chuột vào liên kết, trang web đã viết ở câu 1 sẽ được hiển thị trong iframe</strong></p>
-    </section>
-<style>
-    a {
+    <link rel="stylesheet" href="baitap.css">
+    <style>
+        a {
             color: #374375; /* Màu xanh cho đường link */
             text-decoration: none; /* Xóa gạch dưới của link */
         }
@@ -30,29 +15,34 @@
         a:hover {
             color: #515f99; /* Màu xanh đậm khi hover */
         }
-    iframe {
+
+        iframe {
             width: 100%;
             height: 500px;
             border: 2px solid #374375; /* Navy */
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px; /* Thêm khoảng cách giữa iframe và các phần tử trên */
         }
-    .audio-container {
+
+        .audio-container {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
+            margin-top: 20px;
         }
 
         audio {
-            width: 100%;
+            width: 80%;
             border: none;
             outline: none;
             background-color: #ffccbc; /* Màu peach cho thanh audio */
-            border-radius: 10px;
+            border-radius: 20px;
             height: 40px;
             transition: background-color 0.3s ease;
+            margin-bottom: 10px;
         }
 
         audio:hover {
@@ -74,47 +64,87 @@
         .audio-container button:hover {
             background-color: #5a4db2; /* Màu periwinkle đậm hơn khi hover */
         }
-    button {
-  background-color: #895159; /* Dark Peach */
-  color: #FFFCF5; /* Cloud */
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
 
-button:hover {
-  background-color: #374375; /* Navy */
-  transform: translateY(-3px);
-</style>
+        button {
+            background-color: #895159; /* Dark Peach */
+            color: #FFFCF5; /* Cloud */
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #374375; /* Navy */
+            transform: translateY(-3px);
+        }
+
+        /* Canh giữa hình ảnh và thêm viền màu peach */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            border: 5px solid #450808; /* Viền màu peach đậm */
+            border-radius: 12px; /* Bo góc cho hình ảnh */
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Bài 12/ Vận dụng 2</h1>
+</header>
+
+<main>
+    <!-- Câu hỏi -->
+    <section id="questions">
+        <h2>Câu hỏi</h2>
+        <p><strong>Sửa lại mã nguồn của trang web đã viết trong Nhiệm vụ 2, Bài 11 để thêm một liên kết cho cụm từ Đăng kí. 
+          Khi nháy chuột vào liên kết, trang web đã viết ở câu 1 sẽ được hiển thị trong iframe</strong></p>
+    </section>
+
     <!-- Câu trả lời -->
     <section id="answers">
         <h2>Câu trả lời</h2>
-<h3>Câu lạc bộ Slay</h3>
+        <h3>Câu lạc bộ Slay</h3>
 
+        <!-- Thêm phần tử hình ảnh ở giữa với viền màu peach đậm -->
+        <div class="image-container">
+            <img src="slay.jpg" alt="Hình ảnh minh họa" width="200" height="200">
+        </div>
 
-<img src="slay.jpg" alt="Hình ảnh minh họa" width="300" height="300" style="border-radius: 8%>
+<h3>Bài hát đại diện cho nhóm</h3>
+        <div class="audio-container">
+            <audio controls>
+                <source src="slay.mp3" type="audio/mp3">
+                Trình duyệt của bạn không hỗ trợ phần tử audio.
+            </audio>
+        </div>
 
+        <h3>Hãy đăng kí để trở thành thành viên của Slay!</h3>
 
-<div class="audio-container">
-        <p>Bài hát đại diện cho nhóm</p>
-        <audio controls>
-            <source src="slay.mp3" type="audio/mp3">
-            Trình duyệt của bạn không hỗ trợ phần tử audio.
-        </audio>
-        <button>Play Music</button>
-    </div>
-<p><b>Hãy đăng kí để trở thành thành viên của Slay!</b></p>
+        <!-- Thêm liên kết "Đăng kí" -->
+        <a href="12vd1.html" target="iframecontent">
+            <button class="scroll-button" onclick="scrollToIframe()">Đăng kí</button>
+        </a><br>
 
-<!-- Thêm liên kết "Đăng kí" -->
-<a href="12vd1.html" target="iframecontent">
-  <button type="button">Đăng kí</button>
-</a>
-
-<iframe name="iframecontent" frameborder="0"></iframe>
+        <!-- Thêm khoảng cách giữa button và iframe -->
+        <iframe name="iframecontent" frameborder="0"></iframe>
     </section>
+	<script>
+    function scrollToIframe() {
+        const iframe = document.querySelector('iframe');
+        iframe.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
 </main>
+
 </body>
 </html>
