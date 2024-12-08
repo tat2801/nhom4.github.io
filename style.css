@@ -234,7 +234,7 @@ form .radio-group {
 
 .radio-group input[type="radio"] {
   margin: 0; /* Xóa khoảng cách mặc định của ô radio */
-  transform: scale(1.2); /* Tăng kích thước radio nếu cần */
+  transform: scale(1); /* Tăng kích thước radio nếu cần */
 }
 
 .radio-group label {
