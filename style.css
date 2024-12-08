@@ -87,7 +87,7 @@ section:hover
   display: grid;
   gap: 50px; /* Khoảng cách giữa các thẻ thành viên */
   margin-top: 0; /* Đảm bảo không có khoảng cách trên phần tử team */
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill);
 }
 
 .member {
