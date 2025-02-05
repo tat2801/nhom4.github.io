@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đan ChiChi</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Button style */
+    .home-button {
+      display: inline-block;
+      margin: 20px auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #FFFCF5; /* Cloud */
+      background-color: #916256; /* Navy */
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #DFAEA1; /* Periwinkle */
+      color: #895159; /* Navy */
+    }
+
+    /* Center the button in its section */
+    .button-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Center iframe */
+    .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Thông tin về Trần Anh Thư</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#services">Sở thích</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about">
+    <div class="container">
+      <div class="profile">
+        <img src="tat.jpg" alt="My Avatar">
+        <h2>Xin chào, tôi là <b>Trương Lê Đan Chi</b>!</h2>
+        <p>Bạn có thể gọi tôi là <b>dchi</b> hoặc <b>cheese</b></p>
+        <p>Ngày sinh: <b>01/01/2007</b></p>
+        <p>Cung hoàng đạo: <b>Ma Kết</b></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Sở thích của tôi</h2>
+    <ul>
+      <li>Sở thích: Nghe nhạc, lướt Youtube, 🦀👩</li>
+      <li>Bài hát yêu thích:</li>
+    </ul>
+    <div class="video-container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pSUydWEqKwE?si=EJO20DBY0pYK4XLV" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/pZ1NdE69VTs?si=XZ4yBdPfihvtbMZn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Liên hệ với tôi</h2>
+    <ul>
+      <li>Email: danchithbt@gmail.com</li>
+      <li>Facebook: <a href="https://www.facebook.com/truong.le.an.chi?locale=vi_VN" target="_blank">https://www.facebook.com/truong.le.an.chi?locale=vi_VN</a></li>
+    </ul>
+  </section>
+      
+  <!-- Back to Home Button -->
+  <div class="button-container">
+    <button class="home-button" onclick="goToHomepage()">Home</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // Function to redirect to the homepage
+    function goToHomepage() {
+      window.location.href = 'https://tat2801.github.io/nhom4.github.io/';
+    }
+
+    // Listen for Alt + H to go to the homepage
+    document.addEventListener('keydown', function(event) {
+      if (event.altKey && event.key.toLowerCase() === 'h') {
+        goToHomepage();
+      }
+    });
+  </script>
+</body>
+</html>
